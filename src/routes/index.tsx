@@ -116,6 +116,21 @@ function ContentCard({
   );
 }
 
+/* ─── Membership Button ─── */
+
+function MembershipButton({ href, label }: { href: string; label: string }) {
+  return (
+    <a
+      href={href}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="block w-full rounded-full bg-turquoise px-4 py-2.5 text-center text-sm font-medium text-white transition-colors hover:bg-turquoise-dark"
+    >
+      {label}
+    </a>
+  );
+}
+
 /* ─── Home Page Component ─── */
 
 function Home() {
@@ -441,16 +456,7 @@ function Home() {
                   <span className="mt-0.5 text-ochre">✦</span> Monthly newsletter
                 </li>
               </ul>
-              <a
-                href="#"
-                className="block rounded-full border border-earth/20 px-4 py-2.5 text-center text-sm font-medium text-earth transition-colors hover:bg-earth hover:text-white"
-                onClick={(e) => {
-                  e.preventDefault();
-                  alert("Membership features coming soon!");
-                }}
-              >
-                Coming Soon
-              </a>
+              <MembershipButton href="https://buy.stripe.com/7sYeVd3ms9t5esj9VJ3Nm00" label="Subscribe — $5/mo" />
             </div>
 
             <div className="rounded-2xl border-2 border-turquoise bg-white p-6 shadow-md relative">
@@ -471,16 +477,7 @@ function Home() {
                   <span className="mt-0.5 text-ochre">✦</span> Live Q&amp;A access
                 </li>
               </ul>
-              <a
-                href="#"
-                className="block rounded-full bg-turquoise px-4 py-2.5 text-center text-sm font-medium text-white transition-colors hover:bg-turquoise-dark"
-                onClick={(e) => {
-                  e.preventDefault();
-                  alert("Membership features coming soon!");
-                }}
-              >
-                Coming Soon
-              </a>
+              <MembershipButton href="https://buy.stripe.com/28E28rcX220D3NF7NB3Nm01" label="Subscribe — $15/mo" />
             </div>
 
             <div className="rounded-2xl border border-earth/10 bg-white p-6 shadow-sm">
@@ -498,16 +495,7 @@ function Home() {
                   <span className="mt-0.5 text-ochre">✦</span> Event invitations
                 </li>
               </ul>
-              <a
-                href="#"
-                className="block rounded-full border border-earth/20 px-4 py-2.5 text-center text-sm font-medium text-earth transition-colors hover:bg-earth hover:text-white"
-                onClick={(e) => {
-                  e.preventDefault();
-                  alert("Membership features coming soon!");
-                }}
-              >
-                Coming Soon
-              </a>
+              <MembershipButton href="https://buy.stripe.com/cNicN58GM0Wz6ZRfg33Nm02" label="Subscribe — $30/mo" />
             </div>
           </div>
         </div>
