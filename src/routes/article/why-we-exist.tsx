@@ -364,8 +364,9 @@ function WhyWeExistArticle() {
               <h4 className="mb-4 text-sm font-semibold tracking-wider uppercase text-white">Connect</h4>
               <ul className="space-y-2 text-sm">
                 <li><a href="#" className="transition-colors hover:text-ochre-light">Twitter / X</a></li>
+                <li><a href="#" className="transition-colors hover:text-ochre-light">Facebook</a></li>
                 <li><a href="#" className="transition-colors hover:text-ochre-light">Instagram</a></li>
-                <li><a href="#" className="transition-colors hover:text-ochre-light">Contact Us</a></li>
+                <li><a href="/about" className="transition-colors hover:text-ochre-light">Contact Us</a></li>
               </ul>
             </div>
           </div>
