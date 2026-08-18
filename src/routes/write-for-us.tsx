@@ -256,7 +256,7 @@ function WriteForUsPage() {
               <div className="space-y-3 text-base leading-relaxed text-earth-light/70">
                 <p>
                   Send a brief pitch (200–300 words) to{" "}
-                  <strong className="text-earth">pitches@indigenousbeacon.org</strong>{" "}
+                  <strong className="text-earth">the-indigenous-beacon-ace6ceac@ctomail.io</strong>{" "}
                   with the following:
                 </p>
                 <ul className="list-disc pl-5 space-y-1">
@@ -388,12 +388,12 @@ function WriteForUsPage() {
           </h2>
           <p className="mx-auto mb-10 max-w-xl text-lg leading-relaxed text-earth-light/70">
             Send your pitch to{" "}
-            <strong className="text-earth">pitches@indigenousbeacon.org</strong>.
+            <strong className="text-earth">the-indigenous-beacon-ace6ceac@ctomail.io</strong>.
             We look forward to reading your work.
           </p>
           <div className="flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
             <a
-              href="mailto:pitches@indigenousbeacon.org"
+              href="mailto:the-indigenous-beacon-ace6ceac@ctomail.io"
               className="inline-flex items-center gap-2 rounded-full bg-earth px-8 py-3.5 font-medium text-white shadow-lg transition-all hover:bg-earth-light hover:shadow-xl"
             >
               Send a Pitch
@@ -439,8 +439,9 @@ function WriteForUsPage() {
               <h4 className="mb-4 text-sm font-semibold tracking-wider uppercase text-white">Connect</h4>
               <ul className="space-y-2 text-sm">
                 <li><a href="#" className="transition-colors hover:text-ochre-light">Twitter / X</a></li>
+                <li><a href="#" className="transition-colors hover:text-ochre-light">Facebook</a></li>
                 <li><a href="#" className="transition-colors hover:text-ochre-light">Instagram</a></li>
-                <li><a href="#" className="transition-colors hover:text-ochre-light">Contact Us</a></li>
+                <li><a href="/about" className="transition-colors hover:text-ochre-light">Contact Us</a></li>
               </ul>
             </div>
           </div>

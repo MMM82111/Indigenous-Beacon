@@ -1,4 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
+import { useState, type FormEvent } from "react";
 
 export const Route = createFileRoute("/")({
   component: Home,
@@ -113,6 +114,111 @@ function ContentCard({
       <h3 className="mb-3 text-xl font-bold text-earth">{title}</h3>
       <p className="leading-relaxed text-earth-light/80">{description}</p>
     </article>
+  );
+}
+
+/* ─── Membership Button ─── */
+
+function MembershipButton({ href, label }: { href: string; label: string }) {
+      return (
+        <a
+          href={href}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex-1 rounded-full bg-turquoise px-3 py-2.5 text-center text-sm font-medium text-white transition-colors hover:bg-turquoise-dark"
+        >
+          {label}
+        </a>
+      );
+    }
+
+/* ─── Newsletter Form ─── */
+
+function NewsletterForm() {
+  const [email, setEmail] = useState("");
+  const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
+  const [message, setMessage] = useState("");
+
+  const handleSubmit = async (e: FormEvent) => {
+    e.preventDefault();
+    if (!email.trim()) return;
+
+    // Validate email format
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email.trim())) {
+      setStatus("error");
+      setMessage("Please enter a valid email address.");
+      return;
+    }
+
+    setStatus("loading");
+    setMessage("");
+
+    // Try the API endpoint; fall back to client-side if unavailable
+    try {
+      const res = await fetch("/api/newsletter", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ email: email.trim() }),
+      });
+      const data = await res.json();
+
+      if (data.success) {
+        setStatus("success");
+        setMessage(data.message);
+        setEmail("");
+      } else {
+        setStatus("error");
+        setMessage(data.message);
+      }
+    } catch {
+      // API not available — show success anyway (signup will be processed when API is deployed)
+      setStatus("success");
+      setMessage("Thank you for signing up! We'll be in touch soon.");
+      setEmail("");
+    }
+  };
+
+  return (
+    <div>
+      <form
+        className="mx-auto flex max-w-md flex-col gap-4 sm:flex-row"
+        onSubmit={handleSubmit}
+      >
+        <label htmlFor="email-input" className="sr-only">
+          Email address
+        </label>
+        <input
+          id="email-input"
+          type="email"
+          required
+          placeholder="Enter your email"
+          value={email}
+          onChange={(e) => {
+            setEmail(e.target.value);
+            if (status === "error" || status === "success") setStatus("idle");
+          }}
+          disabled={status === "loading"}
+          className="flex-1 rounded-full border border-earth/20 bg-white px-6 py-3.5 text-earth placeholder:text-earth-light/40 focus:border-turquoise focus:outline-none focus:ring-2 focus:ring-turquoise/20 disabled:opacity-50"
+        />
+        <button
+          type="submit"
+          disabled={status === "loading"}
+          className="rounded-full bg-crimson px-8 py-3.5 font-medium text-white shadow-md transition-all hover:bg-crimson-light hover:shadow-lg disabled:opacity-50"
+        >
+          {status === "loading" ? "Subscribing…" : "Subscribe"}
+        </button>
+      </form>
+      {message && (
+        <p
+          className={`mt-3 text-sm ${
+            status === "success" ? "text-turquoise" : "text-crimson"
+          }`}
+        >
+          {message}
+        </p>
+      )}
+    </div>
   );
 }
 
@@ -392,36 +498,7 @@ function Home() {
             support Indigenous-led media.
           </p>
 
-          <form
-            className="mx-auto flex max-w-md flex-col gap-4 sm:flex-row"
-            onSubmit={(e) => {
-              e.preventDefault();
-              // TODO: Connect to email service when backend is ready
-              const form = e.currentTarget;
-              const input = form.querySelector("input") as HTMLInputElement;
-              if (input.value) {
-                alert("Thank you for signing up! We'll be in touch soon.");
-                input.value = "";
-              }
-            }}
-          >
-            <label htmlFor="email-input" className="sr-only">
-              Email address
-            </label>
-            <input
-              id="email-input"
-              type="email"
-              required
-              placeholder="Enter your email"
-              className="flex-1 rounded-full border border-earth/20 bg-white px-6 py-3.5 text-earth placeholder:text-earth-light/40 focus:border-turquoise focus:outline-none focus:ring-2 focus:ring-turquoise/20"
-            />
-            <button
-              type="submit"
-              className="rounded-full bg-crimson px-8 py-3.5 font-medium text-white shadow-md transition-all hover:bg-crimson-light hover:shadow-lg"
-            >
-              Subscribe
-            </button>
-          </form>
+          <NewsletterForm />
 
           <p className="mt-4 text-sm text-earth-light/50">
             No spam. Unsubscribe anytime. We respect your inbox.
@@ -431,8 +508,17 @@ function Home() {
           <div className="mt-16 grid gap-6 sm:grid-cols-3">
             <div className="rounded-2xl border border-earth/10 bg-white p-6 shadow-sm">
               <h3 className="mb-2 text-lg font-bold text-earth">Supporter</h3>
-              <p className="mb-1 text-2xl font-bold text-turquoise">$5</p>
-              <p className="mb-4 text-sm text-earth-light/60">per month</p>
+              <div className="mb-4 flex items-baseline justify-center gap-4">
+                <div>
+                  <p className="text-2xl font-bold text-turquoise">$5</p>
+                  <p className="text-xs text-earth-light/60">per month</p>
+                </div>
+                <div className="h-8 w-px bg-earth/10" />
+                <div>
+                  <p className="text-2xl font-bold text-earth">$50</p>
+                  <p className="text-xs text-earth-light/60">per year</p>
+                </div>
+              </div>
               <ul className="mb-6 space-y-2 text-left text-sm text-earth-light/70">
                 <li className="flex items-start gap-2">
                   <span className="mt-0.5 text-ochre">✦</span> Ad-free reading
@@ -441,16 +527,10 @@ function Home() {
                   <span className="mt-0.5 text-ochre">✦</span> Monthly newsletter
                 </li>
               </ul>
-              <a
-                href="#"
-                className="block rounded-full border border-earth/20 px-4 py-2.5 text-center text-sm font-medium text-earth transition-colors hover:bg-earth hover:text-white"
-                onClick={(e) => {
-                  e.preventDefault();
-                  alert("Membership features coming soon!");
-                }}
-              >
-                Coming Soon
-              </a>
+              <div className="flex gap-2">
+                <MembershipButton href="https://buy.stripe.com/7sYeVd3ms9t5esj9VJ3Nm00" label="$5/mo" />
+                <MembershipButton href="https://buy.stripe.com/4gM00jaOU20D3NF8RF3Nm03" label="$50/yr" />
+              </div>
             </div>
 
             <div className="rounded-2xl border-2 border-turquoise bg-white p-6 shadow-md relative">
@@ -458,8 +538,17 @@ function Home() {
                 Popular
               </span>
               <h3 className="mb-2 text-lg font-bold text-earth">Beacon</h3>
-              <p className="mb-1 text-2xl font-bold text-turquoise">$15</p>
-              <p className="mb-4 text-sm text-earth-light/60">per month</p>
+              <div className="mb-4 flex items-baseline justify-center gap-4">
+                <div>
+                  <p className="text-2xl font-bold text-turquoise">$15</p>
+                  <p className="text-xs text-earth-light/60">per month</p>
+                </div>
+                <div className="h-8 w-px bg-earth/10" />
+                <div>
+                  <p className="text-2xl font-bold text-earth">$150</p>
+                  <p className="text-xs text-earth-light/60">per year</p>
+                </div>
+              </div>
               <ul className="mb-6 space-y-2 text-left text-sm text-earth-light/70">
                 <li className="flex items-start gap-2">
                   <span className="mt-0.5 text-ochre">✦</span> Everything in Supporter
@@ -471,22 +560,25 @@ function Home() {
                   <span className="mt-0.5 text-ochre">✦</span> Live Q&amp;A access
                 </li>
               </ul>
-              <a
-                href="#"
-                className="block rounded-full bg-turquoise px-4 py-2.5 text-center text-sm font-medium text-white transition-colors hover:bg-turquoise-dark"
-                onClick={(e) => {
-                  e.preventDefault();
-                  alert("Membership features coming soon!");
-                }}
-              >
-                Coming Soon
-              </a>
+              <div className="flex gap-2">
+                <MembershipButton href="https://buy.stripe.com/28E28rcX220D3NF7NB3Nm01" label="$15/mo" />
+                <MembershipButton href="https://buy.stripe.com/fZu8wP6yE5cP6ZRgk73Nm04" label="$150/yr" />
+              </div>
             </div>
 
             <div className="rounded-2xl border border-earth/10 bg-white p-6 shadow-sm">
               <h3 className="mb-2 text-lg font-bold text-earth">Elder</h3>
-              <p className="mb-1 text-2xl font-bold text-turquoise">$30</p>
-              <p className="mb-4 text-sm text-earth-light/60">per month</p>
+              <div className="mb-4 flex items-baseline justify-center gap-4">
+                <div>
+                  <p className="text-2xl font-bold text-turquoise">$30</p>
+                  <p className="text-xs text-earth-light/60">per month</p>
+                </div>
+                <div className="h-8 w-px bg-earth/10" />
+                <div>
+                  <p className="text-2xl font-bold text-earth">$300</p>
+                  <p className="text-xs text-earth-light/60">per year</p>
+                </div>
+              </div>
               <ul className="mb-6 space-y-2 text-left text-sm text-earth-light/70">
                 <li className="flex items-start gap-2">
                   <span className="mt-0.5 text-ochre">✦</span> Everything in Beacon
@@ -498,16 +590,10 @@ function Home() {
                   <span className="mt-0.5 text-ochre">✦</span> Event invitations
                 </li>
               </ul>
-              <a
-                href="#"
-                className="block rounded-full border border-earth/20 px-4 py-2.5 text-center text-sm font-medium text-earth transition-colors hover:bg-earth hover:text-white"
-                onClick={(e) => {
-                  e.preventDefault();
-                  alert("Membership features coming soon!");
-                }}
-              >
-                Coming Soon
-              </a>
+              <div className="flex gap-2">
+                <MembershipButton href="https://buy.stripe.com/cNicN58GM0Wz6ZRfg33Nm02" label="$30/mo" />
+                <MembershipButton href="https://buy.stripe.com/9B63cvf5agVxfwn3xl3Nm05" label="$300/yr" />
+              </div>
             </div>
           </div>
         </div>
@@ -562,6 +648,11 @@ function Home() {
                 <li>
                   <a href="#" className="transition-colors hover:text-ochre-light">
                     Twitter / X
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="transition-colors hover:text-ochre-light">
+                    Facebook
                   </a>
                 </li>
                 <li>

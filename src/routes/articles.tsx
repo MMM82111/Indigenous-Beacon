@@ -35,10 +35,10 @@ function ArticleCard({
 }) {
   return (
     <article
-      className={`group rounded-2xl border border-earth/10 bg-white shadow-sm transition-all duration-300 hover:shadow-lg hover:-translate-y-1 ${
-        featured ? "sm:col-span-2 lg:col-span-2" : ""
-      }`}
-    >
+          className={`group relative rounded-2xl border border-earth/10 bg-white shadow-sm transition-all duration-300 hover:shadow-lg hover:-translate-y-1 ${
+            featured ? "sm:col-span-2 lg:col-span-2" : ""
+          }`}
+        >
       <div className="p-6 sm:p-8">
         <div className="mb-3 flex items-center gap-3">
           <span className="rounded-full bg-ochre/10 px-3 py-0.5 text-xs font-semibold text-ochre">
@@ -83,40 +83,76 @@ function ArticlesPage() {
       featured: true,
     },
     {
-      slug: "#",
-      title: "Coming Soon: Sovereignty in the Supreme Court",
+      slug: "/article/what-does-it-mean-to-be-native-today",
+      title: "What Does It Mean to Be Native Today?",
       excerpt:
-        "An in-depth look at the upcoming tribal sovereignty cases before the Supreme Court and what they mean for Native nations.",
-      category: "Reporting & News",
-      author: "Staff",
-      date: "Coming soon",
+        "An exploration of the complexity, diversity, and resilience of contemporary Native American identity — beyond the stereotypes.",
+      category: "Culture & Identity",
+      author: "The Indigenous Beacon Editorial Team",
+      date: "July 16, 2026",
     },
     {
-      slug: "#",
-      title: "The Language Keepers: Reviving Endangered Tongues",
+      slug: "/article/land-back-what-it-really-means",
+      title: "Land Back: What It Really Means",
       excerpt:
-        "Meet the elders and educators working tirelessly to preserve and revitalize Indigenous languages across Turtle Island.",
+        "A policy explainer on the movement to return land to Indigenous stewardship — what it is, what it isn't, and where it's winning.",
+      category: "Policy Explainer",
+      author: "The Indigenous Beacon Editorial Team",
+      date: "July 16, 2026",
+    },
+    {
+      slug: "/article/meet-the-makers-sarah-ortegon",
+      title: "Meet the Makers: Sarah Ortegon",
+      excerpt:
+        "The Diné (Navajo) artist is carrying a centuries-old weaving tradition into the 21st century, one thread at a time.",
       category: "Culture & Storytelling",
-      author: "Staff",
-      date: "Coming soon",
+      author: "The Indigenous Beacon Editorial Team",
+      date: "July 16, 2026",
     },
     {
-      slug: "#",
-      title: "Curriculum Spotlight: Native-led Lesson Plans",
+      slug: "/article/5-stories-media-missed",
+      title: "5 Stories Mainstream Media Missed This Month",
       excerpt:
-        "A preview of our upcoming educational resources for K–12 teachers, developed by Native educators and aligned with national standards.",
-      category: "Education & Curriculum",
-      author: "Staff",
-      date: "Coming soon",
-    },
-    {
-      slug: "#",
-      title: "Water is Life: The Fight for Clean Water on Reservations",
-      excerpt:
-        "An investigative report on the ongoing water crisis affecting Native communities and the grassroots movements demanding change.",
+        "A roundup of under-covered Native news that deserves your attention — from land returns to language revitalization.",
       category: "Reporting & News",
-      author: "Staff",
-      date: "Coming soon",
+      author: "The Indigenous Beacon Editorial Team",
+      date: "July 16, 2026",
+    },
+    {
+      slug: "/article/teaching-native-history-beyond-november",
+      title: "Teaching Native History Beyond November",
+      excerpt:
+        "How educators can integrate Indigenous perspectives into the classroom year-round — a practical guide for K-12 and beyond.",
+      category: "Education & Curriculum",
+      author: "The Indigenous Beacon Editorial Team",
+      date: "July 16, 2026",
+    },
+    {
+      slug: "/article/data-centers-tribal-lands",
+      title: "The Cloud's New Frontier: Data Centers and Tribal Lands",
+      excerpt:
+        "As tech giants race to build data centers across the American West, Native American tribes face a complex new challenge — and an unexpected opportunity.",
+      category: "Reporting & News",
+      author: "The Indigenous Beacon Editorial Team",
+      date: "July 16, 2026",
+    },
+    {
+      slug: "/article/tribal-broadband-access",
+      title: "The Last Mile: How Native Nations Are Building Their Way Out of the Digital Divide",
+      excerpt:
+        "On tribal lands across the United States, a quiet infrastructure revolution is underway — one fiber optic strand at a time.",
+      category: "Reporting & News",
+      author: "The Indigenous Beacon Editorial Team",
+      date: "July 2026",
+    },
+    {
+      slug: "/article/native-representation-in-tech",
+      title: "Coded Invisibility: Native Americans in Tech and the Fight for Representation",
+      excerpt:
+        "Native people make up less than 1% of the tech workforce. A growing movement is trying to change that — and reshape the future of technology itself.",
+      category: "Reporting & News",
+      author: "The Indigenous Beacon Editorial Team",
+      date: "July 2026",
     },
   ];
 
@@ -255,8 +291,9 @@ function ArticlesPage() {
               <h4 className="mb-4 text-sm font-semibold tracking-wider uppercase text-white">Connect</h4>
               <ul className="space-y-2 text-sm">
                 <li><a href="#" className="transition-colors hover:text-ochre-light">Twitter / X</a></li>
+                <li><a href="#" className="transition-colors hover:text-ochre-light">Facebook</a></li>
                 <li><a href="#" className="transition-colors hover:text-ochre-light">Instagram</a></li>
-                <li><a href="#" className="transition-colors hover:text-ochre-light">Contact Us</a></li>
+                <li><a href="/about" className="transition-colors hover:text-ochre-light">Contact Us</a></li>
               </ul>
             </div>
           </div>

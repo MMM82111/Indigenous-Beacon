@@ -318,7 +318,9 @@ function WhyWeExistArticle() {
           {/* CTA */}
           <div className="flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
             <a
-              href="/#join"
+              href="https://buy.stripe.com/28E28rcX220D3NF7NB3Nm01"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center gap-2 rounded-full bg-earth px-8 py-3.5 font-medium text-white shadow-lg transition-all hover:bg-earth-light hover:shadow-xl"
             >
               Support Our Mission
@@ -362,8 +364,9 @@ function WhyWeExistArticle() {
               <h4 className="mb-4 text-sm font-semibold tracking-wider uppercase text-white">Connect</h4>
               <ul className="space-y-2 text-sm">
                 <li><a href="#" className="transition-colors hover:text-ochre-light">Twitter / X</a></li>
+                <li><a href="#" className="transition-colors hover:text-ochre-light">Facebook</a></li>
                 <li><a href="#" className="transition-colors hover:text-ochre-light">Instagram</a></li>
-                <li><a href="#" className="transition-colors hover:text-ochre-light">Contact Us</a></li>
+                <li><a href="/about" className="transition-colors hover:text-ochre-light">Contact Us</a></li>
               </ul>
             </div>
           </div>

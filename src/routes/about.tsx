@@ -305,7 +305,7 @@ function About() {
                 </svg>
               </div>
               <h3 className="mb-1 font-bold text-earth">Email</h3>
-              <p className="text-sm text-earth-light/70">hello@indigenousbeacon.org</p>
+              <p className="text-sm text-earth-light/70">the-indigenous-beacon-ace6ceac@ctomail.io</p>
             </div>
 
             <div className="rounded-2xl border border-earth/10 bg-white p-6 shadow-sm">
@@ -390,8 +390,9 @@ function About() {
               <h4 className="mb-4 text-sm font-semibold tracking-wider uppercase text-white">Connect</h4>
               <ul className="space-y-2 text-sm">
                 <li><a href="#" className="transition-colors hover:text-ochre-light">Twitter / X</a></li>
+                <li><a href="#" className="transition-colors hover:text-ochre-light">Facebook</a></li>
                 <li><a href="#" className="transition-colors hover:text-ochre-light">Instagram</a></li>
-                <li><a href="#" className="transition-colors hover:text-ochre-light">Contact Us</a></li>
+                <li><a href="/about" className="transition-colors hover:text-ochre-light">Contact Us</a></li>
               </ul>
             </div>
           </div>
