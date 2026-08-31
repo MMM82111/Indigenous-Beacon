@@ -163,6 +163,15 @@ function ArticlesPage() {
       author: "The Indigenous Beacon Editorial Team",
       date: "August 27, 2026",
     },
+    {
+      slug: "/article/native-food-sovereignty",
+      title: "The Three Sisters Return: Native Food Sovereignty",
+      excerpt:
+        "From seed rematriation to community gardens, Native communities are rebuilding food systems that nourish both people and land — reclaiming the right to define their own foodways.",
+      category: "Culture & Storytelling",
+      author: "The Indigenous Beacon Editorial Team",
+      date: "August 27, 2026",
+    },
   ];
 
   return (
