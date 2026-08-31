@@ -154,6 +154,15 @@ function ArticlesPage() {
       author: "The Indigenous Beacon Editorial Team",
       date: "July 2026",
     },
+    {
+      slug: "/article/indigenous-language-revitalization",
+      title: "Speaking the Language Home: Indigenous Language Revitalization in Action",
+      excerpt:
+        "Across Indian Country, communities are reviving languages once forced into silence — through immersion schools, master–apprentice programs, and technology.",
+      category: "Culture & Storytelling",
+      author: "The Indigenous Beacon Editorial Team",
+      date: "August 27, 2026",
+    },
   ];
 
   return (
