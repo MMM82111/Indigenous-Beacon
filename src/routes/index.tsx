@@ -1,5 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useState, type FormEvent } from "react";
+import { subscribeToNewsletter } from "../server-fns/newsletter";
 
 export const Route = createFileRoute("/")({
   component: Home,
@@ -154,14 +155,8 @@ function NewsletterForm() {
     setStatus("loading");
     setMessage("");
 
-    // Try the API endpoint; fall back to client-side if unavailable
     try {
-      const res = await fetch("/api/newsletter", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ email: email.trim() }),
-      });
-      const data = await res.json();
+      const data = await subscribeToNewsletter({ data: { email: email.trim() } });
 
       if (data.success) {
         setStatus("success");
@@ -172,10 +167,8 @@ function NewsletterForm() {
         setMessage(data.message);
       }
     } catch {
-      // API not available — show success anyway (signup will be processed when API is deployed)
-      setStatus("success");
-      setMessage("Thank you for signing up! We'll be in touch soon.");
-      setEmail("");
+      setStatus("error");
+      setMessage("Something went wrong. Please try again.");
     }
   };
 
