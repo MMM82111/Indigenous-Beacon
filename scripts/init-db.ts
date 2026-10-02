@@ -4,10 +4,10 @@
  * Run once after connecting a database (DATABASE_URL):
  *   DATABASE_URL=postgres://... bun run scripts/init-db.ts
  *
- * Uses the same Neon serverless client as the app, so it works both against
- * the sandbox and the production database.
+ * Uses the same standard Postgres client as the app, so it works against
+ * any provider (Tiger Cloud, Neon, etc.).
  */
-import { neon } from "@neondatabase/serverless";
+import postgres from "postgres";
 
 const url = process.env.DATABASE_URL;
 if (!url) {
@@ -15,8 +15,7 @@ if (!url) {
   process.exit(1);
 }
 
-const sql = neon(url);
-
+const sql = postgres(url, { max: 1 });
 await sql`
   CREATE TABLE IF NOT EXISTS subscribers (
     id uuid PRIMARY KEY DEFAULT gen_random_uuid(),
@@ -24,5 +23,5 @@ await sql`
     created_at timestamptz NOT NULL DEFAULT now()
   );
 `;
-
+await sql.end();
 console.log("subscribers table ready.");
