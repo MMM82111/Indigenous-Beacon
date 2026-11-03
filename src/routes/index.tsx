@@ -497,19 +497,29 @@ function Home() {
             No spam. Unsubscribe anytime. We respect your inbox.
           </p>
 
-          {/* Membership options */}
-          <div className="mt-16 grid gap-6 sm:grid-cols-3">
+          {/* Support options — one-time contributions */}
+          <div className="mt-16">
+            <h3 className="mb-3 font-serif text-2xl font-bold text-earth">
+              Support the Beacon
+            </h3>
+            <p className="mx-auto max-w-xl text-sm leading-relaxed text-earth-light/60">
+              Every amount below is a <strong>one-time contribution</strong> — you
+              are charged once, and there is no automatic renewal. Choose the
+              level that fits, and thank you for backing Native-led journalism.
+            </p>
+          </div>
+          <div className="mt-8 grid gap-6 sm:grid-cols-3">
             <div className="rounded-2xl border border-earth/10 bg-white p-6 shadow-sm">
               <h3 className="mb-2 text-lg font-bold text-earth">Supporter</h3>
               <div className="mb-4 flex items-baseline justify-center gap-4">
                 <div>
                   <p className="text-2xl font-bold text-turquoise">$5</p>
-                  <p className="text-xs text-earth-light/60">per month</p>
+                  <p className="text-xs text-earth-light/60">one-time</p>
                 </div>
                 <div className="h-8 w-px bg-earth/10" />
                 <div>
                   <p className="text-2xl font-bold text-earth">$50</p>
-                  <p className="text-xs text-earth-light/60">per year</p>
+                  <p className="text-xs text-earth-light/60">one-time</p>
                 </div>
               </div>
               <ul className="mb-6 space-y-2 text-left text-sm text-earth-light/70">
@@ -521,8 +531,8 @@ function Home() {
                 </li>
               </ul>
               <div className="flex gap-2">
-                <MembershipButton href="https://buy.stripe.com/7sYeVd3ms9t5esj9VJ3Nm00" label="$5/mo" />
-                <MembershipButton href="https://buy.stripe.com/4gM00jaOU20D3NF8RF3Nm03" label="$50/yr" />
+                <MembershipButton href="https://buy.stripe.com/7sYeVd3ms9t5esj9VJ3Nm00" label="$5 once" />
+                <MembershipButton href="https://buy.stripe.com/4gM00jaOU20D3NF8RF3Nm03" label="$50 once" />
               </div>
             </div>
 
@@ -534,12 +544,12 @@ function Home() {
               <div className="mb-4 flex items-baseline justify-center gap-4">
                 <div>
                   <p className="text-2xl font-bold text-turquoise">$15</p>
-                  <p className="text-xs text-earth-light/60">per month</p>
+                  <p className="text-xs text-earth-light/60">one-time</p>
                 </div>
                 <div className="h-8 w-px bg-earth/10" />
                 <div>
                   <p className="text-2xl font-bold text-earth">$150</p>
-                  <p className="text-xs text-earth-light/60">per year</p>
+                  <p className="text-xs text-earth-light/60">one-time</p>
                 </div>
               </div>
               <ul className="mb-6 space-y-2 text-left text-sm text-earth-light/70">
@@ -554,8 +564,8 @@ function Home() {
                 </li>
               </ul>
               <div className="flex gap-2">
-                <MembershipButton href="https://buy.stripe.com/28E28rcX220D3NF7NB3Nm01" label="$15/mo" />
-                <MembershipButton href="https://buy.stripe.com/fZu8wP6yE5cP6ZRgk73Nm04" label="$150/yr" />
+                <MembershipButton href="https://buy.stripe.com/28E28rcX220D3NF7NB3Nm01" label="$15 once" />
+                <MembershipButton href="https://buy.stripe.com/fZu8wP6yE5cP6ZRgk73Nm04" label="$150 once" />
               </div>
             </div>
 
@@ -564,12 +574,12 @@ function Home() {
               <div className="mb-4 flex items-baseline justify-center gap-4">
                 <div>
                   <p className="text-2xl font-bold text-turquoise">$30</p>
-                  <p className="text-xs text-earth-light/60">per month</p>
+                  <p className="text-xs text-earth-light/60">one-time</p>
                 </div>
                 <div className="h-8 w-px bg-earth/10" />
                 <div>
                   <p className="text-2xl font-bold text-earth">$300</p>
-                  <p className="text-xs text-earth-light/60">per year</p>
+                  <p className="text-xs text-earth-light/60">one-time</p>
                 </div>
               </div>
               <ul className="mb-6 space-y-2 text-left text-sm text-earth-light/70">
@@ -584,8 +594,8 @@ function Home() {
                 </li>
               </ul>
               <div className="flex gap-2">
-                <MembershipButton href="https://buy.stripe.com/cNicN58GM0Wz6ZRfg33Nm02" label="$30/mo" />
-                <MembershipButton href="https://buy.stripe.com/9B63cvf5agVxfwn3xl3Nm05" label="$300/yr" />
+                <MembershipButton href="https://buy.stripe.com/cNicN58GM0Wz6ZRfg33Nm02" label="$30 once" />
+                <MembershipButton href="https://buy.stripe.com/9B63cvf5agVxfwn3xl3Nm05" label="$300 once" />
               </div>
             </div>
           </div>
