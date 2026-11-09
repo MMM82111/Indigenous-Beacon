@@ -383,7 +383,7 @@ function About() {
               <ul className="space-y-2 text-sm">
                 <li><Link to="/" className="transition-colors hover:text-ochre-light">Home</Link></li>
                 <li><Link to="/about" className="transition-colors hover:text-ochre-light">About</Link></li>
-                <li><a href="/#join" className="transition-colors hover:text-ochre-light">Membership</a></li>
+                <li><a href="/#join" className="transition-colors hover:text-ochre-light">Support Us</a></li>
               </ul>
             </div>
             <div>

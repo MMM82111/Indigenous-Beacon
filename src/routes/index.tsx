@@ -636,7 +636,7 @@ function Home() {
                 </li>
                 <li>
                   <a href="#join" className="transition-colors hover:text-ochre-light">
-                    Membership
+                    Support Us
                   </a>
                 </li>
               </ul>
