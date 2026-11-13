@@ -164,6 +164,15 @@ function ArticlesPage() {
       date: "August 27, 2026",
     },
     {
+      slug: "/article/icwa-after-brackeen",
+      title: "ICWA After Brackeen: What the Court Settled — and What It Left Open",
+      excerpt:
+        "The Indian Child Welfare Act survived the Supreme Court in 2023. What the law actually requires of state agencies — and which questions the Court never answered.",
+      category: "Law & Sovereignty",
+      author: "The Indigenous Beacon Editorial Team",
+      date: "November 9, 2026",
+    },
+    {
       slug: "/article/native-food-sovereignty",
       title: "The Three Sisters Return: Native Food Sovereignty",
       excerpt:
