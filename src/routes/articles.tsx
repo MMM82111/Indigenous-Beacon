@@ -164,6 +164,15 @@ function ArticlesPage() {
       date: "August 27, 2026",
     },
     {
+      slug: "/article/indian-boarding-schools-federal-record",
+      title: "What the Federal Record Actually Shows About Indian Boarding Schools",
+      excerpt:
+        "408 schools across 37 states. Over 500 documented child deaths at 19 of them. What the Interior Department's own investigation found — and what it did not finish.",
+      category: "History & Policy",
+      author: "The Indigenous Beacon Editorial Team",
+      date: "November 9, 2026",
+    },
+    {
       slug: "/article/icwa-after-brackeen",
       title: "ICWA After Brackeen: What the Court Settled — and What It Left Open",
       excerpt:
