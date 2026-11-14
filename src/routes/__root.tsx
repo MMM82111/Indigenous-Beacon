@@ -24,7 +24,6 @@ export const Route = createRootRoute({
         content:
           "A digital media and education platform amplifying Native American voices through original journalism, storytelling, and educational resources.",
       },
-      { name: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
     links: [

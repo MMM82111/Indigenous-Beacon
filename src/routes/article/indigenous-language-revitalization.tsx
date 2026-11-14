@@ -21,13 +21,19 @@ export const Route = createFileRoute("/article/indigenous-language-revitalizatio
         content:
           "Across Indian Country, communities are reviving languages once forced into silence — and winning, one fluent speaker at a time.",
       },
+      { name: "og:type", content: "article" },
     ],
+    links: [{ rel: "canonical", href: "https://indigenousbeacon.com/article/indigenous-language-revitalization" }],
   }),
 });
 
 function LanguageRevitalization() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: "{\"@context\": \"https://schema.org\", \"@type\": \"NewsArticle\", \"headline\": \"Speaking the Language Home: Indigenous Language Revitalization\", \"description\": \"Across Indian Country, communities are reviving languages once forced into silence \u2014 through immersion schools, master-apprentice programs, and technology. A look at how, and why it matters.\", \"datePublished\": \"2026-08-27\", \"dateModified\": \"2026-08-27\", \"author\": {\"@type\": \"Organization\", \"name\": \"The Indigenous Beacon\"}, \"publisher\": {\"@type\": \"Organization\", \"name\": \"The Indigenous Beacon\", \"url\": \"https://indigenousbeacon.com\"}, \"mainEntityOfPage\": {\"@type\": \"WebPage\", \"@id\": \"https://indigenousbeacon.com/article/indigenous-language-revitalization\"}, \"url\": \"https://indigenousbeacon.com/article/indigenous-language-revitalization\"}" }}
+      />
       {/* ─────── Nav ─────── */}
       <header className="sticky top-0 z-50 border-b border-earth/10 bg-white/80 backdrop-blur-md">
         <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 sm:px-10 lg:px-16">

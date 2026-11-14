@@ -11,6 +11,8 @@ export const Route = createFileRoute("/articles")({
           "Browse articles from The Indigenous Beacon — Native-led journalism, cultural storytelling, and educational resources.",
       },
     ],
+    meta: [{ name: "og:type", content: "website" }],
+    links: [{ rel: "canonical", href: "https://indigenousbeacon.com/articles" }],
   }),
 });
 

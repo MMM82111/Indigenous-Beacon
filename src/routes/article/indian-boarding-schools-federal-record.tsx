@@ -21,13 +21,19 @@ export const Route = createFileRoute("/article/indian-boarding-schools-federal-r
         content:
           "The Interior Department's investigation documented 408 federal Indian boarding schools, 431 sites, and more than 500 child deaths at 19 schools.",
       },
+      { name: "og:type", content: "article" },
     ],
+    links: [{ rel: "canonical", href: "https://indigenousbeacon.com/article/indian-boarding-schools-federal-record" }],
   }),
 });
 
 function BoardingSchoolsRecord() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: "{\"@context\": \"https://schema.org\", \"@type\": \"NewsArticle\", \"headline\": \"What the Federal Record Actually Shows About Indian Boarding Schools\", \"description\": \"408 schools across 37 states. Over 500 documented child deaths at 19 schools. The Department of the Interior's own investigation put the numbers on the record \u2014 here is what it found and what it left unfinished.\", \"datePublished\": \"2026-11-09\", \"dateModified\": \"2026-11-09\", \"author\": {\"@type\": \"Organization\", \"name\": \"The Indigenous Beacon\"}, \"publisher\": {\"@type\": \"Organization\", \"name\": \"The Indigenous Beacon\", \"url\": \"https://indigenousbeacon.com\"}, \"mainEntityOfPage\": {\"@type\": \"WebPage\", \"@id\": \"https://indigenousbeacon.com/article/indian-boarding-schools-federal-record\"}, \"url\": \"https://indigenousbeacon.com/article/indian-boarding-schools-federal-record\"}" }}
+      />
       {/* ─────── Nav ─────── */}
       <header className="sticky top-0 z-50 border-b border-earth/10 bg-white/80 backdrop-blur-md">
         <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 sm:px-10 lg:px-16">

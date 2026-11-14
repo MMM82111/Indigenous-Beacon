@@ -4,6 +4,10 @@ import { subscribeToNewsletter } from "../server-fns/newsletter";
 
 export const Route = createFileRoute("/")({
   component: Home,
+  head: () => ({
+    links: [{ rel: "canonical", href: "https://indigenousbeacon.com/" }],
+    meta: [{ name: "og:type", content: "website" }],
+  }),
 });
 
 /* ─── SVG Icon Components ─── */

@@ -11,6 +11,8 @@ export const Route = createFileRoute("/about")({
           "Learn about The Indigenous Beacon — a Native-led digital media and education platform amplifying Indigenous voices through journalism, storytelling, and education.",
       },
     ],
+    meta: [{ name: "og:type", content: "website" }],
+    links: [{ rel: "canonical", href: "https://indigenousbeacon.com/about" }],
   }),
 });
 

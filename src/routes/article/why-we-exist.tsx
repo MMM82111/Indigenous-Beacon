@@ -19,6 +19,7 @@ export const Route = createFileRoute("/article/why-we-exist")({
       { name: "og:type", content: "article" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
+    links: [{ rel: "canonical", href: "https://indigenousbeacon.com/article/why-we-exist" }],
   }),
 });
 
@@ -27,6 +28,10 @@ export const Route = createFileRoute("/article/why-we-exist")({
 function WhyWeExistArticle() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: "{\"@context\": \"https://schema.org\", \"@type\": \"NewsArticle\", \"headline\": \"Why The Indigenous Beacon Exists\", \"description\": \"A Native-led platform for truth, told by those who live it. Read our launch story about why Indigenous representation in media matters.\", \"datePublished\": \"2026-07-15\", \"dateModified\": \"2026-07-15\", \"author\": {\"@type\": \"Organization\", \"name\": \"The Indigenous Beacon\"}, \"publisher\": {\"@type\": \"Organization\", \"name\": \"The Indigenous Beacon\", \"url\": \"https://indigenousbeacon.com\"}, \"mainEntityOfPage\": {\"@type\": \"WebPage\", \"@id\": \"https://indigenousbeacon.com/article/why-we-exist\"}, \"url\": \"https://indigenousbeacon.com/article/why-we-exist\"}" }}
+      />
       {/* ─────── Navigation ─────── */}
       <header className="fixed top-0 z-50 w-full border-b border-earth/10 bg-cream/95 backdrop-blur-md">
         <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 sm:px-10 lg:px-16">

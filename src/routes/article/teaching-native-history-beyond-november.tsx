@@ -19,6 +19,7 @@ export const Route = createFileRoute("/article/teaching-native-history-beyond-no
       { name: "og:type", content: "article" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
+    links: [{ rel: "canonical", href: "https://indigenousbeacon.com/article/teaching-native-history-beyond-november" }],
   }),
 });
 
@@ -27,6 +28,10 @@ export const Route = createFileRoute("/article/teaching-native-history-beyond-no
 function TeachingNativeHistoryArticle() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: "{\"@context\": \"https://schema.org\", \"@type\": \"NewsArticle\", \"headline\": \"Teaching Native History Beyond November\", \"description\": \"How educators can integrate Indigenous perspectives into the classroom year-round \u2014 a practical guide for K-12 and beyond.\", \"datePublished\": \"2026-07-16\", \"dateModified\": \"2026-07-16\", \"author\": {\"@type\": \"Organization\", \"name\": \"The Indigenous Beacon\"}, \"publisher\": {\"@type\": \"Organization\", \"name\": \"The Indigenous Beacon\", \"url\": \"https://indigenousbeacon.com\"}, \"mainEntityOfPage\": {\"@type\": \"WebPage\", \"@id\": \"https://indigenousbeacon.com/article/teaching-native-history-beyond-november\"}, \"url\": \"https://indigenousbeacon.com/article/teaching-native-history-beyond-november\"}" }}
+      />
       {/* ─────── Navigation ─────── */}
       <header className="fixed top-0 z-50 w-full border-b border-earth/10 bg-cream/95 backdrop-blur-md">
         <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 sm:px-10 lg:px-16">

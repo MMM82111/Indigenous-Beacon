@@ -19,6 +19,7 @@ export const Route = createFileRoute("/article/meet-the-makers-sarah-ortegon")({
       { name: "og:type", content: "article" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
+    links: [{ rel: "canonical", href: "https://indigenousbeacon.com/article/meet-the-makers-sarah-ortegon" }],
   }),
 });
 
@@ -27,6 +28,10 @@ export const Route = createFileRoute("/article/meet-the-makers-sarah-ortegon")({
 function SarahOrtegonArticle() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: "{\"@context\": \"https://schema.org\", \"@type\": \"NewsArticle\", \"headline\": \"Meet the Makers: Sarah Ortegon\", \"description\": \"The Din\u00e9 (Navajo) artist is carrying a centuries-old weaving tradition into the 21st century, one thread at a time.\", \"datePublished\": \"2026-07-16\", \"dateModified\": \"2026-07-16\", \"author\": {\"@type\": \"Organization\", \"name\": \"The Indigenous Beacon\"}, \"publisher\": {\"@type\": \"Organization\", \"name\": \"The Indigenous Beacon\", \"url\": \"https://indigenousbeacon.com\"}, \"mainEntityOfPage\": {\"@type\": \"WebPage\", \"@id\": \"https://indigenousbeacon.com/article/meet-the-makers-sarah-ortegon\"}, \"url\": \"https://indigenousbeacon.com/article/meet-the-makers-sarah-ortegon\"}" }}
+      />
       {/* ─────── Navigation ─────── */}
       <header className="fixed top-0 z-50 w-full border-b border-earth/10 bg-cream/95 backdrop-blur-md">
         <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 sm:px-10 lg:px-16">

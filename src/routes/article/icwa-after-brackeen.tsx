@@ -21,13 +21,19 @@ export const Route = createFileRoute("/article/icwa-after-brackeen")({
         content:
           "What the Indian Child Welfare Act requires, what Haaland v. Brackeen decided, and the questions the Court left open.",
       },
+      { name: "og:type", content: "article" },
     ],
+    links: [{ rel: "canonical", href: "https://indigenousbeacon.com/article/icwa-after-brackeen" }],
   }),
 });
 
 function IcwaAfterBrackeen() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: "{\"@context\": \"https://schema.org\", \"@type\": \"NewsArticle\", \"headline\": \"ICWA After Brackeen: What the Court Settled \u2014 and What It Left Open\", \"description\": \"The Indian Child Welfare Act survived the Supreme Court in 2023. Here is what the law actually requires of state agencies, what the Court decided, and which questions it never answered.\", \"datePublished\": \"2026-11-09\", \"dateModified\": \"2026-11-09\", \"author\": {\"@type\": \"Organization\", \"name\": \"The Indigenous Beacon\"}, \"publisher\": {\"@type\": \"Organization\", \"name\": \"The Indigenous Beacon\", \"url\": \"https://indigenousbeacon.com\"}, \"mainEntityOfPage\": {\"@type\": \"WebPage\", \"@id\": \"https://indigenousbeacon.com/article/icwa-after-brackeen\"}, \"url\": \"https://indigenousbeacon.com/article/icwa-after-brackeen\"}" }}
+      />
       {/* ─────── Nav ─────── */}
       <header className="sticky top-0 z-50 border-b border-earth/10 bg-white/80 backdrop-blur-md">
         <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 sm:px-10 lg:px-16">

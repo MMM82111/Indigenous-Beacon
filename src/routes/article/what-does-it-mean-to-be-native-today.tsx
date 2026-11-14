@@ -19,6 +19,7 @@ export const Route = createFileRoute("/article/what-does-it-mean-to-be-native-to
       { name: "og:type", content: "article" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
+    links: [{ rel: "canonical", href: "https://indigenousbeacon.com/article/what-does-it-mean-to-be-native-today" }],
   }),
 });
 
@@ -27,6 +28,10 @@ export const Route = createFileRoute("/article/what-does-it-mean-to-be-native-to
 function NativeIdentityArticle() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: "{\"@context\": \"https://schema.org\", \"@type\": \"NewsArticle\", \"headline\": \"What Does It Mean to Be Native Today?\", \"description\": \"An exploration of the complexity, diversity, and resilience of contemporary Native American identity \u2014 beyond the stereotypes.\", \"datePublished\": \"2026-07-16\", \"dateModified\": \"2026-07-16\", \"author\": {\"@type\": \"Organization\", \"name\": \"The Indigenous Beacon\"}, \"publisher\": {\"@type\": \"Organization\", \"name\": \"The Indigenous Beacon\", \"url\": \"https://indigenousbeacon.com\"}, \"mainEntityOfPage\": {\"@type\": \"WebPage\", \"@id\": \"https://indigenousbeacon.com/article/what-does-it-mean-to-be-native-today\"}, \"url\": \"https://indigenousbeacon.com/article/what-does-it-mean-to-be-native-today\"}" }}
+      />
       {/* ─────── Navigation ─────── */}
       <header className="fixed top-0 z-50 w-full border-b border-earth/10 bg-cream/95 backdrop-blur-md">
         <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 sm:px-10 lg:px-16">

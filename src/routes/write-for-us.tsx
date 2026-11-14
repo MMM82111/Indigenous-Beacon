@@ -11,6 +11,8 @@ export const Route = createFileRoute("/write-for-us")({
           "Contributor guidelines for The Indigenous Beacon. We welcome pitches from Native writers, journalists, educators, and storytellers.",
       },
     ],
+    meta: [{ name: "og:type", content: "website" }],
+    links: [{ rel: "canonical", href: "https://indigenousbeacon.com/write-for-us" }],
   }),
 });
 

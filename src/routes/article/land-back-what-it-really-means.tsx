@@ -19,6 +19,7 @@ export const Route = createFileRoute("/article/land-back-what-it-really-means")(
       { name: "og:type", content: "article" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
+    links: [{ rel: "canonical", href: "https://indigenousbeacon.com/article/land-back-what-it-really-means" }],
   }),
 });
 
@@ -27,6 +28,10 @@ export const Route = createFileRoute("/article/land-back-what-it-really-means")(
 function LandBackArticle() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: "{\"@context\": \"https://schema.org\", \"@type\": \"NewsArticle\", \"headline\": \"Land Back: What It Really Means\", \"description\": \"A policy explainer on the movement to return land to Indigenous stewardship \u2014 what it is, what it isn't, and where it's winning.\", \"datePublished\": \"2026-07-16\", \"dateModified\": \"2026-07-16\", \"author\": {\"@type\": \"Organization\", \"name\": \"The Indigenous Beacon\"}, \"publisher\": {\"@type\": \"Organization\", \"name\": \"The Indigenous Beacon\", \"url\": \"https://indigenousbeacon.com\"}, \"mainEntityOfPage\": {\"@type\": \"WebPage\", \"@id\": \"https://indigenousbeacon.com/article/land-back-what-it-really-means\"}, \"url\": \"https://indigenousbeacon.com/article/land-back-what-it-really-means\"}" }}
+      />
       {/* ─────── Navigation ─────── */}
       <header className="fixed top-0 z-50 w-full border-b border-earth/10 bg-cream/95 backdrop-blur-md">
         <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 sm:px-10 lg:px-16">

@@ -21,13 +21,19 @@ export const Route = createFileRoute("/article/native-food-sovereignty")({
         content:
           "From seed rematriation to community gardens, Native communities are rebuilding food systems that nourish both people and land.",
       },
+      { name: "og:type", content: "article" },
     ],
+    links: [{ rel: "canonical", href: "https://indigenousbeacon.com/article/native-food-sovereignty" }],
   }),
 });
 
 function FoodSovereignty() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: "{\"@context\": \"https://schema.org\", \"@type\": \"NewsArticle\", \"headline\": \"The Three Sisters Return: Native Food Sovereignty\", \"description\": \"From seed rematriation to community gardens, Native communities are rebuilding food systems that nourish both people and land \u2014 reclaiming the right to define their own foodways.\", \"datePublished\": \"2026-08-27\", \"dateModified\": \"2026-08-27\", \"author\": {\"@type\": \"Organization\", \"name\": \"The Indigenous Beacon\"}, \"publisher\": {\"@type\": \"Organization\", \"name\": \"The Indigenous Beacon\", \"url\": \"https://indigenousbeacon.com\"}, \"mainEntityOfPage\": {\"@type\": \"WebPage\", \"@id\": \"https://indigenousbeacon.com/article/native-food-sovereignty\"}, \"url\": \"https://indigenousbeacon.com/article/native-food-sovereignty\"}" }}
+      />
       {/* ─────── Nav ─────── */}
       <header className="sticky top-0 z-50 border-b border-earth/10 bg-white/80 backdrop-blur-md">
         <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 sm:px-10 lg:px-16">

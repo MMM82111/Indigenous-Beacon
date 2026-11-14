@@ -19,6 +19,7 @@ export const Route = createFileRoute("/article/native-representation-in-tech")({
       { name: "og:type", content: "article" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
+    links: [{ rel: "canonical", href: "https://indigenousbeacon.com/article/native-representation-in-tech" }],
   }),
 });
 
@@ -27,6 +28,10 @@ export const Route = createFileRoute("/article/native-representation-in-tech")({
 function NativeRepInTechArticle() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: "{\"@context\": \"https://schema.org\", \"@type\": \"NewsArticle\", \"headline\": \"Coded Invisibility: Native Americans in Tech\", \"description\": \"Native people make up less than 1% of the tech workforce. A growing movement is trying to change that \u2014 and reshape the future of technology itself.\", \"datePublished\": \"2026-07\", \"dateModified\": \"2026-07\", \"author\": {\"@type\": \"Organization\", \"name\": \"The Indigenous Beacon\"}, \"publisher\": {\"@type\": \"Organization\", \"name\": \"The Indigenous Beacon\", \"url\": \"https://indigenousbeacon.com\"}, \"mainEntityOfPage\": {\"@type\": \"WebPage\", \"@id\": \"https://indigenousbeacon.com/article/native-representation-in-tech\"}, \"url\": \"https://indigenousbeacon.com/article/native-representation-in-tech\"}" }}
+      />
       {/* ─────── Navigation ─────── */}
       <header className="fixed top-0 z-50 w-full border-b border-earth/10 bg-cream/95 backdrop-blur-md">
         <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 sm:px-10 lg:px-16">
