@@ -25,6 +25,20 @@ export const Route = createRootRoute({
           "A digital media and education platform amplifying Native American voices through original journalism, storytelling, and educational resources.",
       },
       { name: "twitter:card", content: "summary_large_image" },
+      {
+        name: "og:image",
+        content: "https://indigenousbeacon.com/og-image.png",
+      },
+      { name: "og:image:width", content: "1200" },
+      { name: "og:image:height", content: "630" },
+      {
+        name: "og:image:alt",
+        content: "The Indigenous Beacon — Native-led journalism, history and education",
+      },
+      {
+        name: "twitter:image",
+        content: "https://indigenousbeacon.com/og-image.png",
+      },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
