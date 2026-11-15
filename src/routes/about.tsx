@@ -1,4 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
+import { useState } from "react";
 
 export const Route = createFileRoute("/about")({
   component: About,
@@ -70,6 +71,10 @@ function ValueCard({
 /* ─── About Page ─── */
 
 function About() {
+  const [name, setContactName] = useState("");
+  const [email, setContactEmail] = useState("");
+  const [message, setMessage] = useState("");
+  const [sent, setSent] = useState(false);
   return (
     <>
       {/* ─────── Navigation ─────── */}
@@ -337,30 +342,75 @@ function About() {
             <form
               onSubmit={(e) => {
                 e.preventDefault();
-                alert("Thank you for your message! We'll get back to you soon.");
+                const subject = encodeURIComponent(
+                  `Website message from ${name || "a reader"}`,
+                );
+                const body = encodeURIComponent(
+                  `${message}\n\n— ${name}\nReply to: ${email}`,
+                );
+                window.location.href = `mailto:the-indigenous-beacon-ace6ceac@ctomail.io?subject=${subject}&body=${body}`;
+                setSent(true);
               }}
               className="space-y-4 text-left"
             >
               <div className="grid gap-4 sm:grid-cols-2">
                 <div>
                   <label htmlFor="contact-name" className="mb-1 block text-sm font-medium text-earth">Name</label>
-                  <input id="contact-name" type="text" required className="w-full rounded-xl border border-earth/20 bg-cream px-4 py-2.5 text-earth placeholder:text-earth-light/40 focus:border-turquoise focus:outline-none focus:ring-2 focus:ring-turquoise/20" placeholder="Your name" />
+                  <input
+                    id="contact-name"
+                    type="text"
+                    required
+                    value={name}
+                    onChange={(e) => setContactName(e.target.value)}
+                    className="w-full rounded-xl border border-earth/20 bg-cream px-4 py-2.5 text-earth placeholder:text-earth-light/40 focus:border-turquoise focus:outline-none focus:ring-2 focus:ring-turquoise/20"
+                    placeholder="Your name"
+                  />
                 </div>
                 <div>
                   <label htmlFor="contact-email" className="mb-1 block text-sm font-medium text-earth">Email</label>
-                  <input id="contact-email" type="email" required className="w-full rounded-xl border border-earth/20 bg-cream px-4 py-2.5 text-earth placeholder:text-earth-light/40 focus:border-turquoise focus:outline-none focus:ring-2 focus:ring-turquoise/20" placeholder="you@example.com" />
+                  <input
+                    id="contact-email"
+                    type="email"
+                    required
+                    value={email}
+                    onChange={(e) => setContactEmail(e.target.value)}
+                    className="w-full rounded-xl border border-earth/20 bg-cream px-4 py-2.5 text-earth placeholder:text-earth-light/40 focus:border-turquoise focus:outline-none focus:ring-2 focus:ring-turquoise/20"
+                    placeholder="you@example.com"
+                  />
                 </div>
               </div>
               <div>
                 <label htmlFor="contact-message" className="mb-1 block text-sm font-medium text-earth">Message</label>
-                <textarea id="contact-message" required rows={4} className="w-full rounded-xl border border-earth/20 bg-cream px-4 py-2.5 text-earth placeholder:text-earth-light/40 focus:border-turquoise focus:outline-none focus:ring-2 focus:ring-turquoise/20" placeholder="Tell us about your story idea, collaboration, or feedback..." />
+                <textarea
+                  id="contact-message"
+                  required
+                  rows={4}
+                  value={message}
+                  onChange={(e) => setMessage(e.target.value)}
+                  className="w-full rounded-xl border border-earth/20 bg-cream px-4 py-2.5 text-earth placeholder:text-earth-light/40 focus:border-turquoise focus:outline-none focus:ring-2 focus:ring-turquoise/20"
+                  placeholder="Tell us about your story idea, collaboration, or feedback..."
+                />
               </div>
               <button type="submit" className="inline-flex items-center gap-2 rounded-full bg-earth px-8 py-3 font-medium text-white shadow transition-colors hover:bg-earth-light hover:shadow-md">
-                Send Message
+                Open in your email app
                 <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 12L3.269 3.126A59.768 59.768 0 0 1 21.485 12 59.77 59.77 0 0 1 3.27 20.876L5.999 12Zm0 0h7.5" />
                 </svg>
               </button>
+              {sent && (
+                <p className="text-sm text-earth-light/70">
+                  Your email app should have opened with this message ready to
+                  send — press send there and it reaches us. If nothing opened,
+                  email{" "}
+                  <a
+                    className="font-medium text-turquoise underline underline-offset-2"
+                    href="mailto:the-indigenous-beacon-ace6ceac@ctomail.io"
+                  >
+                    the-indigenous-beacon-ace6ceac@ctomail.io
+                  </a>{" "}
+                  directly.
+                </p>
+              )}
             </form>
           </div>
         </div>

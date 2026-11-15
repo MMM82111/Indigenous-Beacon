@@ -143,6 +143,7 @@ function NewsletterForm() {
   const [email, setEmail] = useState("");
   const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
   const [message, setMessage] = useState("");
+  const [unavailable, setUnavailable] = useState(false);
 
   const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
@@ -158,6 +159,7 @@ function NewsletterForm() {
 
     setStatus("loading");
     setMessage("");
+    setUnavailable(false);
 
     try {
       const data = await subscribeToNewsletter({ data: { email: email.trim() } });
@@ -169,6 +171,7 @@ function NewsletterForm() {
       } else {
         setStatus("error");
         setMessage(data.message);
+        setUnavailable(Boolean((data as { unavailable?: boolean }).unavailable));
       }
     } catch {
       setStatus("error");
@@ -213,6 +216,20 @@ function NewsletterForm() {
           }`}
         >
           {message}
+        </p>
+      )}
+      {unavailable && (
+        <p className="mt-2 text-sm text-earth-light/70">
+          In the meantime you can{" "}
+          <a
+            className="font-medium text-turquoise underline underline-offset-2 hover:text-turquoise-dark"
+            href={`mailto:the-indigenous-beacon-ace6ceac@ctomail.io?subject=${encodeURIComponent(
+              "Newsletter signup",
+            )}`}
+          >
+            email us
+          </a>{" "}
+          and we will add you to the list by hand.
         </p>
       )}
     </div>

@@ -24,8 +24,8 @@ export const subscribeToNewsletter = createServerFn({ method: "POST" })
     if (!process.env.DATABASE_URL) {
       return {
         success: false,
-        message:
-          "Newsletter signups are temporarily unavailable. Please try again soon.",
+        unavailable: true,
+        message: "Newsletter signups are temporarily unavailable.",
       };
     }
     try {
