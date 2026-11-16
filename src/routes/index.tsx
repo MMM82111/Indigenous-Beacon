@@ -530,13 +530,13 @@ function Home() {
             </p>
           </div>
           <div className="mt-8 grid gap-6 sm:grid-cols-3">
-            <div className="rounded-2xl border border-earth/10 bg-white p-6 shadow-sm">
+            <div className="flex flex-col rounded-2xl border border-earth/10 bg-white p-6 shadow-sm">
               <h3 className="mb-2 text-lg font-bold text-earth">Supporter</h3>
               <div className="mb-4">
                 <p className="text-2xl font-bold text-turquoise">$5</p>
                 <p className="text-xs text-earth-light/60">one-time contribution</p>
               </div>
-              <ul className="mb-6 space-y-2 text-left text-sm text-earth-light/70">
+              <ul className="mb-6 flex-1 space-y-2 text-left text-sm text-earth-light/70">
                 <li className="flex items-start gap-2">
                   <span className="mt-0.5 text-ochre">✦</span> Ad-free reading
                 </li>
@@ -557,7 +557,7 @@ function Home() {
               </div>
             </div>
 
-            <div className="rounded-2xl border-2 border-turquoise bg-white p-6 shadow-md relative">
+            <div className="relative flex flex-col rounded-2xl border-2 border-turquoise bg-white p-6 shadow-md">
               <span className="absolute -top-3 left-1/2 -translate-x-1/2 rounded-full bg-turquoise px-4 py-1 text-xs font-semibold text-white">
                 Popular
               </span>
@@ -566,7 +566,7 @@ function Home() {
                 <p className="text-2xl font-bold text-turquoise">$15</p>
                 <p className="text-xs text-earth-light/60">one-time contribution</p>
               </div>
-              <ul className="mb-6 space-y-2 text-left text-sm text-earth-light/70">
+              <ul className="mb-6 flex-1 space-y-2 text-left text-sm text-earth-light/70">
                 <li className="flex items-start gap-2">
                   <span className="mt-0.5 text-ochre">✦</span> Everything in Supporter
                 </li>
@@ -590,13 +590,13 @@ function Home() {
               </div>
             </div>
 
-            <div className="rounded-2xl border border-earth/10 bg-white p-6 shadow-sm">
+            <div className="flex flex-col rounded-2xl border border-earth/10 bg-white p-6 shadow-sm">
               <h3 className="mb-2 text-lg font-bold text-earth">Elder</h3>
               <div className="mb-4">
                 <p className="text-2xl font-bold text-turquoise">$30</p>
                 <p className="text-xs text-earth-light/60">one-time contribution</p>
               </div>
-              <ul className="mb-6 space-y-2 text-left text-sm text-earth-light/70">
+              <ul className="mb-6 flex-1 space-y-2 text-left text-sm text-earth-light/70">
                 <li className="flex items-start gap-2">
                   <span className="mt-0.5 text-ochre">✦</span> Everything in Beacon
                 </li>
