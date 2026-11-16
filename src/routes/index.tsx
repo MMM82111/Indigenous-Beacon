@@ -130,7 +130,7 @@ function MembershipButton({ href, label }: { href: string; label: string }) {
           href={href}
           target="_blank"
           rel="noopener noreferrer"
-          className="flex-1 rounded-full bg-turquoise px-3 py-2.5 text-center text-sm font-medium text-white transition-colors hover:bg-turquoise-dark"
+          className="w-full rounded-full bg-turquoise px-6 py-2.5 text-center text-sm font-medium text-white transition-colors hover:bg-turquoise-dark"
         >
           {label}
         </a>
@@ -532,16 +532,9 @@ function Home() {
           <div className="mt-8 grid gap-6 sm:grid-cols-3">
             <div className="rounded-2xl border border-earth/10 bg-white p-6 shadow-sm">
               <h3 className="mb-2 text-lg font-bold text-earth">Supporter</h3>
-              <div className="mb-4 flex items-baseline justify-center gap-4">
-                <div>
-                  <p className="text-2xl font-bold text-turquoise">$5</p>
-                  <p className="text-xs text-earth-light/60">one-time</p>
-                </div>
-                <div className="h-8 w-px bg-earth/10" />
-                <div>
-                  <p className="text-2xl font-bold text-earth">$50</p>
-                  <p className="text-xs text-earth-light/60">one-time</p>
-                </div>
+              <div className="mb-4">
+                <p className="text-2xl font-bold text-turquoise">$5</p>
+                <p className="text-xs text-earth-light/60">one-time contribution</p>
               </div>
               <ul className="mb-6 space-y-2 text-left text-sm text-earth-light/70">
                 <li className="flex items-start gap-2">
@@ -551,9 +544,16 @@ function Home() {
                   <span className="mt-0.5 text-ochre">✦</span> Monthly newsletter
                 </li>
               </ul>
-              <div className="flex gap-2">
+              <div className="flex flex-col items-center gap-2">
                 <MembershipButton href="https://buy.stripe.com/7sYeVd3ms9t5esj9VJ3Nm00" label="$5 once" />
-                <MembershipButton href="https://buy.stripe.com/4gM00jaOU20D3NF8RF3Nm03" label="$50 once" />
+                <a
+                  href="https://buy.stripe.com/4gM00jaOU20D3NF8RF3Nm03"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-xs text-earth-light/60 underline underline-offset-2 transition-colors hover:text-earth"
+                >
+                  or contribute $50
+                </a>
               </div>
             </div>
 
@@ -562,16 +562,9 @@ function Home() {
                 Popular
               </span>
               <h3 className="mb-2 text-lg font-bold text-earth">Beacon</h3>
-              <div className="mb-4 flex items-baseline justify-center gap-4">
-                <div>
-                  <p className="text-2xl font-bold text-turquoise">$15</p>
-                  <p className="text-xs text-earth-light/60">one-time</p>
-                </div>
-                <div className="h-8 w-px bg-earth/10" />
-                <div>
-                  <p className="text-2xl font-bold text-earth">$150</p>
-                  <p className="text-xs text-earth-light/60">one-time</p>
-                </div>
+              <div className="mb-4">
+                <p className="text-2xl font-bold text-turquoise">$15</p>
+                <p className="text-xs text-earth-light/60">one-time contribution</p>
               </div>
               <ul className="mb-6 space-y-2 text-left text-sm text-earth-light/70">
                 <li className="flex items-start gap-2">
@@ -584,24 +577,24 @@ function Home() {
                   <span className="mt-0.5 text-ochre">✦</span> Live Q&amp;A access
                 </li>
               </ul>
-              <div className="flex gap-2">
+              <div className="flex flex-col items-center gap-2">
                 <MembershipButton href="https://buy.stripe.com/28E28rcX220D3NF7NB3Nm01" label="$15 once" />
-                <MembershipButton href="https://buy.stripe.com/fZu8wP6yE5cP6ZRgk73Nm04" label="$150 once" />
+                <a
+                  href="https://buy.stripe.com/fZu8wP6yE5cP6ZRgk73Nm04"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-xs text-earth-light/60 underline underline-offset-2 transition-colors hover:text-earth"
+                >
+                  or contribute $150
+                </a>
               </div>
             </div>
 
             <div className="rounded-2xl border border-earth/10 bg-white p-6 shadow-sm">
               <h3 className="mb-2 text-lg font-bold text-earth">Elder</h3>
-              <div className="mb-4 flex items-baseline justify-center gap-4">
-                <div>
-                  <p className="text-2xl font-bold text-turquoise">$30</p>
-                  <p className="text-xs text-earth-light/60">one-time</p>
-                </div>
-                <div className="h-8 w-px bg-earth/10" />
-                <div>
-                  <p className="text-2xl font-bold text-earth">$300</p>
-                  <p className="text-xs text-earth-light/60">one-time</p>
-                </div>
+              <div className="mb-4">
+                <p className="text-2xl font-bold text-turquoise">$30</p>
+                <p className="text-xs text-earth-light/60">one-time contribution</p>
               </div>
               <ul className="mb-6 space-y-2 text-left text-sm text-earth-light/70">
                 <li className="flex items-start gap-2">
@@ -614,9 +607,16 @@ function Home() {
                   <span className="mt-0.5 text-ochre">✦</span> Event invitations
                 </li>
               </ul>
-              <div className="flex gap-2">
+              <div className="flex flex-col items-center gap-2">
                 <MembershipButton href="https://buy.stripe.com/cNicN58GM0Wz6ZRfg33Nm02" label="$30 once" />
-                <MembershipButton href="https://buy.stripe.com/9B63cvf5agVxfwn3xl3Nm05" label="$300 once" />
+                <a
+                  href="https://buy.stripe.com/9B63cvf5agVxfwn3xl3Nm05"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-xs text-earth-light/60 underline underline-offset-2 transition-colors hover:text-earth"
+                >
+                  or contribute $300
+                </a>
               </div>
             </div>
           </div>
