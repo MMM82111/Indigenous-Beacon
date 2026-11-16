@@ -670,22 +670,12 @@ function Home() {
               </h4>
               <ul className="space-y-2 text-sm">
                 <li>
-                  <a href="#" className="transition-colors hover:text-ochre-light">
-                    Twitter / X
+                  <a href="/rss.xml" className="transition-colors hover:text-ochre-light">
+                    RSS feed
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="transition-colors hover:text-ochre-light">
-                    Facebook
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="transition-colors hover:text-ochre-light">
-                    Instagram
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="transition-colors hover:text-ochre-light">
+                  <a href="/about" className="transition-colors hover:text-ochre-light">
                     Contact Us
                   </a>
                 </li>

@@ -30,7 +30,7 @@ function TribalBroadbandArticle() {
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: "{\"@context\": \"https://schema.org\", \"@type\": \"NewsArticle\", \"headline\": \"The Last Mile: Tribal Broadband Access\", \"description\": \"How Native nations are building their own broadband networks to bridge the digital divide, assert sovereignty, and connect their communities.\", \"datePublished\": \"2026-07\", \"dateModified\": \"2026-07\", \"author\": {\"@type\": \"Organization\", \"name\": \"The Indigenous Beacon\"}, \"publisher\": {\"@type\": \"Organization\", \"name\": \"The Indigenous Beacon\", \"url\": \"https://indigenousbeacon.com\"}, \"mainEntityOfPage\": {\"@type\": \"WebPage\", \"@id\": \"https://indigenousbeacon.com/article/tribal-broadband-access\"}, \"url\": \"https://indigenousbeacon.com/article/tribal-broadband-access\"}" }}
+        dangerouslySetInnerHTML={{ __html: "{\"@context\": \"https://schema.org\", \"@type\": \"NewsArticle\", \"headline\": \"The Last Mile: Tribal Broadband Access\", \"description\": \"How Native nations are building their own broadband networks to bridge the digital divide, assert sovereignty, and connect their communities.\", \"datePublished\": \"2026-07-16\", \"dateModified\": \"2026-07-16\", \"author\": {\"@type\": \"Organization\", \"name\": \"The Indigenous Beacon\"}, \"publisher\": {\"@type\": \"Organization\", \"name\": \"The Indigenous Beacon\", \"url\": \"https://indigenousbeacon.com\"}, \"mainEntityOfPage\": {\"@type\": \"WebPage\", \"@id\": \"https://indigenousbeacon.com/article/tribal-broadband-access\"}, \"url\": \"https://indigenousbeacon.com/article/tribal-broadband-access\"}" }}
       />
       {/* ─────── Navigation ─────── */}
       <header className="fixed top-0 z-50 w-full border-b border-earth/10 bg-cream/95 backdrop-blur-md">
@@ -103,7 +103,7 @@ function TribalBroadbandArticle() {
           <div className="flex items-center justify-center gap-4 text-sm text-earth-light/60">
             <span>The Indigenous Beacon Editorial Team</span>
             <span aria-hidden="true">·</span>
-            <time dateTime="2026-07">July 2026</time>
+            <time dateTime="2026-07-16">July 16, 2026</time>
           </div>
         </div>
       </section>
@@ -341,7 +341,7 @@ function TribalBroadbandArticle() {
 
           <div className="mb-10 rounded-2xl border border-earth/10 bg-cream-dark p-8 text-center">
             <p className="text-sm italic text-earth-light/60">
-              This article is part of The Indigenous Beacon's ongoing series on technology, sovereignty, and infrastructure in Indian Country. <a href="#" className="font-medium text-ochre underline underline-offset-2 hover:text-ochre-dark">Subscribe to our newsletter</a> for weekly reporting on Native issues.
+              This article is part of The Indigenous Beacon's ongoing series on technology, sovereignty, and infrastructure in Indian Country. <a href="/#join" className="font-medium text-ochre underline underline-offset-2 hover:text-ochre-dark">Subscribe to our newsletter</a> for weekly reporting on Native issues.
             </p>
             <p className="mt-3 text-sm italic text-earth-light/60">
               The Indigenous Beacon is a Native-led digital media and education platform. Our work is supported by members and foundations. <a href="/#join" className="font-medium text-ochre underline underline-offset-2 hover:text-ochre-dark">Become a member</a> to support independent Native journalism.
@@ -398,9 +398,8 @@ function TribalBroadbandArticle() {
             <div>
               <h4 className="mb-4 text-sm font-semibold tracking-wider uppercase text-white">Connect</h4>
               <ul className="space-y-2 text-sm">
-                <li><a href="#" className="transition-colors hover:text-ochre-light">Twitter / X</a></li>
-                <li><a href="#" className="transition-colors hover:text-ochre-light">Instagram</a></li>
-                <li><a href="#" className="transition-colors hover:text-ochre-light">Contact Us</a></li>
+                <li><a href="/rss.xml" className="transition-colors hover:text-ochre-light">RSS feed</a></li>
+                <li><a href="/about" className="transition-colors hover:text-ochre-light">Contact Us</a></li>
               </ul>
             </div>
           </div>
