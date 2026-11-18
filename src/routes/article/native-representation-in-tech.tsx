@@ -370,6 +370,7 @@ function NativeRepInTechArticle() {
                 <li><Link to="/articles" className="transition-colors hover:text-ochre-light">Articles</Link></li>
                 <li><Link to="/about" className="transition-colors hover:text-ochre-light">About</Link></li>
                 <li><Link to="/write-for-us" className="transition-colors hover:text-ochre-light">Write for Us</Link></li>
+                <li><a href="/educators" className="transition-colors hover:text-ochre-light">For Educators</a></li>
                 <li><a href="/#join" className="transition-colors hover:text-ochre-light">Support Us</a></li>
               </ul>
             </div>

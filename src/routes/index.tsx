@@ -275,6 +275,12 @@ function Home() {
             >
               Write for Us
             </Link>
+            <Link
+              to="/educators"
+              className="text-sm font-medium text-earth-light/70 transition-colors hover:text-earth"
+            >
+              For Educators
+            </Link>
             <a
               href="#join"
               className="rounded-full bg-turquoise px-5 py-2 text-sm font-medium text-white transition-colors hover:bg-turquoise-dark"
@@ -294,6 +300,7 @@ function Home() {
               <a href="#content" className="rounded-lg px-3 py-2 text-sm font-medium text-earth-light/70 hover:bg-cream-dark hover:text-earth">What We Cover</a>
               <Link to="/articles" className="rounded-lg px-3 py-2 text-sm font-medium text-earth-light/70 hover:bg-cream-dark hover:text-earth">Articles</Link>
               <Link to="/write-for-us" className="rounded-lg px-3 py-2 text-sm font-medium text-earth-light/70 hover:bg-cream-dark hover:text-earth">Write for Us</Link>
+              <Link to="/educators" className="rounded-lg px-3 py-2 text-sm font-medium text-earth-light/70 hover:bg-cream-dark hover:text-earth">For Educators</Link>
               <a href="#join" className="rounded-full bg-turquoise px-4 py-2 text-center text-sm font-medium text-white hover:bg-turquoise-dark">Join Us</a>
             </div>
           </details>
@@ -653,6 +660,21 @@ function Home() {
                 <li>
                   <a href="#content" className="transition-colors hover:text-ochre-light">
                     What We Cover
+                  </a>
+                </li>
+                <li>
+                  <a href="/articles" className="transition-colors hover:text-ochre-light">
+                    Articles
+                  </a>
+                </li>
+                <li>
+                  <a href="/educators" className="transition-colors hover:text-ochre-light">
+                    For Educators
+                  </a>
+                </li>
+                <li>
+                  <a href="/about" className="transition-colors hover:text-ochre-light">
+                    About
                   </a>
                 </li>
                 <li>
