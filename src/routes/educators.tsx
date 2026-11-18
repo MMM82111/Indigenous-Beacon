@@ -149,8 +149,8 @@ function Educators() {
           <div className="mx-auto mb-12 max-w-2xl text-center">
             <h2 className="section-heading mb-4 text-earth">What you can use today</h2>
             <p className="text-lg leading-relaxed text-earth-light/70">
-              We would rather show you the work than describe it. Everything below
-              is published now and free to read.
+              We would rather show you the work than describe it. Here is what is
+              published now, and an honest account of what does not exist yet.
             </p>
           </div>
 
@@ -166,14 +166,14 @@ function Educators() {
               description="Our ICWA piece cites the statute and Haaland v. Brackeen, 599 U.S. 255. Our boarding-school piece is built from the Interior Department's Federal Indian Boarding School Initiative, Volumes I and II."
             />
             <UseCard
-              status="In development"
+              status="Not built yet"
               title="Lesson plans & discussion guides"
-              description="Per-article guides with framing questions, vocabulary and primary sources, written to be handed to a class as-is. We are building these now and want teachers in the room while we do."
+              description="Per-article guides with framing questions, vocabulary and primary sources, written to be handed to a class as-is. These do not exist yet. Tell us what would make one usable and we will build to that."
             />
             <UseCard
-              status="In development"
+              status="Not built yet"
               title="Curriculum packs"
-              description="Grouped units — ICWA and child welfare, land and sovereignty, language revitalization, media representation — assembled from published work with classroom use terms attached."
+              description="Grouped units — ICWA and child welfare, land and sovereignty, language revitalization, media representation — assembled from published work with classroom use terms attached. Also not built yet."
             />
           </div>
 
