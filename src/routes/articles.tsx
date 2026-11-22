@@ -113,9 +113,9 @@ function ArticlesPage() {
     },
     {
       slug: "/article/5-stories-media-missed",
-      title: "5 Stories Mainstream Media Missed This Month",
+      title: "Withdrawn: 5 Stories Mainstream Media Missed This Month",
       excerpt:
-        "A roundup of under-covered Native news that deserves your attention — from land returns to language revitalization.",
+        "This article has been withdrawn. It described five recent news events in specific detail and we could not verify any of them against a source, and we removed it rather than leave it standing.",
       category: "Reporting & News",
       author: "The Indigenous Beacon Editorial Team",
       date: "July 16, 2026",

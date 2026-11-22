@@ -10,7 +10,7 @@ def esc(t):
     return (t.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
              .replace('"', "&quot;"))
 
-WITHDRAWN = {"data-centers-tribal-lands", "native-representation-in-tech", "tribal-broadband-access", "meet-the-makers-sarah-ortegon"}
+WITHDRAWN = {"data-centers-tribal-lands", "native-representation-in-tech", "tribal-broadband-access", "meet-the-makers-sarah-ortegon", "5-stories-media-missed"}
 
 items = []
 for path in glob.glob(os.path.join(ART_DIR, "*.tsx")):

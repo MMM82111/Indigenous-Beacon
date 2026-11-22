@@ -145,25 +145,25 @@ function LandBackArticle() {
             <div className="rounded-2xl border border-earth/10 bg-white p-6 shadow-sm">
               <h3 className="mb-2 text-xl font-bold text-earth">1. Public Lands Transfers</h3>
               <p className="text-base leading-relaxed text-earth-light/85">
-                The most common form of Land Back involves the transfer of federal or state public lands to tribal ownership or co-management. These are lands that are already publicly owned — national forests, Bureau of Land Management parcels, state parks — not private property. The Biden administration's transfer of 465 acres of national forest land to the Pueblo of Jemez in New Mexico is a recent example. The land, which contains sacred sites and ancestral villages, was returned to Tribal ownership while remaining protected as open space.
+                The most common form of Land Back involves the transfer of federal or state public lands to tribal ownership or co-management. These are lands that are already publicly owned — national forests, Bureau of Land Management parcels, state parks — not private property. On July 12, 2024, President Biden signed the Winnebago Land Transfer Act, returning roughly 1,600 acres along the Missouri River in Nebraska to the Winnebago Tribe of Nebraska. In December 2023 the Hoopa Valley Tribe acquired 10,395 acres bordering the western edge of its reservation in California.
               </p>
             </div>
             <div className="rounded-2xl border border-earth/10 bg-white p-6 shadow-sm">
               <h3 className="mb-2 text-xl font-bold text-earth">2. Co-Management Agreements</h3>
               <p className="text-base leading-relaxed text-earth-light/85">
-                Some Land Back efforts focus on shared stewardship rather than outright ownership. In 2023, the Biden administration signed new co-management agreements with several tribal nations, giving them a formal role in managing national parks and public lands that contain culturally significant sites. The Bears Ears National Monument in Utah, co-managed by five tribal nations, is the most prominent example.
+                Some Land Back efforts focus on shared stewardship rather than outright ownership. In 2021 the 18,800-acre National Bison Range in Montana was transferred from the U.S. Fish and Wildlife Service back to the Confederated Salish and Kootenai Tribes. Bears Ears National Monument in Utah, designated in 2016 and co-managed with a commission of five tribal nations, is the most prominent example of shared authority over a landscape rather than a transfer of title.
               </p>
             </div>
             <div className="rounded-2xl border border-earth/10 bg-white p-6 shadow-sm">
               <h3 className="mb-2 text-xl font-bold text-earth">3. Land Purchases and Donations</h3>
               <p className="text-base leading-relaxed text-earth-light/85">
-                Private land trusts and conservation organizations have begun facilitating Land Back by purchasing land and transferring it to tribal nations. The Nature Conservancy has transferred thousands of acres to tribal stewardship. The Trust for Public Land has helped return sacred sites like the return of 1,200 acres of Sáttítla (Medicine Lake Highlands) to the Pit River Tribe in California.
+                Private land trusts and conservation organizations have begun facilitating Land Back by purchasing land and transferring it to tribal nations. In June 2024, a years-long collaboration between The Nature Conservancy and the Keweenaw Bay Indian Community restored 760 acres of forest in Baraga County, Michigan to the tribe. In January 2025 the Massachusetts landowner W.D. Cowls returned 500 acres in Sunderland to the Hassanamisco Nipmuc Band.
               </p>
             </div>
             <div className="rounded-2xl border border-earth/10 bg-white p-6 shadow-sm">
               <h3 className="mb-2 text-xl font-bold text-earth">4. Repatriation of Specific Sites</h3>
               <p className="text-base leading-relaxed text-earth-light/85">
-                Many Land Back campaigns focus on returning specific, culturally significant sites — burial grounds, sacred mountains, ceremonial sites — that are currently under non-Native ownership. The return of Mount Graham to the San Carlos Apache Tribe, or the return of the 130-acre "Pronghorn" site to the Confederated Tribes of the Colville Reservation, are examples of targeted site repatriation.
+                Many Land Back campaigns focus on returning specific, culturally significant sites — burial grounds, sacred mountains, ceremonial sites — that are currently under non-Native ownership. In 1970 the United States returned Blue Lake and roughly 48,000 acres of the Carson National Forest to Taos Pueblo — the first successful modern land return in the country — and added a further 764 acres in 1996. In August 2022 the Red Cliff Chippewa in Wisconsin had 1,500 acres of Lake Superior shoreline returned by Bayfield County.
               </p>
             </div>
           </div>
@@ -277,11 +277,11 @@ function LandBackArticle() {
             </li>
             <li className="flex items-start gap-3">
               <span className="mt-1.5 h-2 w-2 shrink-0 rounded-full bg-sage" aria-hidden="true" />
-              <span><strong className="text-earth">State:</strong> California has returned thousands of acres of state land to tribal nations, including the 2023 return of 1,200 acres of Bruce Beach to the Wiyot Tribe.</span>
+              <span><strong className="text-earth">County:</strong> Counties and states are transferring land too: Bayfield County in Wisconsin returned 1,500 acres of Lake Superior shoreline to the Red Cliff Chippewa in 2022.</span>
             </li>
             <li className="flex items-start gap-3">
               <span className="mt-1.5 h-2 w-2 shrink-0 rounded-full bg-sage" aria-hidden="true" />
-              <span><strong className="text-earth">Local:</strong> Cities and counties are returning land to tribal ownership, including the 2022 transfer of 40 acres in Evanston, Illinois to the Ho-Chunk Nation.</span>
+              <span><strong className="text-earth">Specific sites:</strong> Federal agencies are also handing back individual sites: in February 2025 the U.S. Fish and Wildlife Service returned 680 acres at White Horse Hill National Game Preserve in North Dakota to the Spirit Lake Tribe.</span>
             </li>
             <li className="flex items-start gap-3">
               <span className="mt-1.5 h-2 w-2 shrink-0 rounded-full bg-sage" aria-hidden="true" />
@@ -298,6 +298,26 @@ function LandBackArticle() {
           <p className="mb-8 text-lg leading-relaxed text-earth-light/80">
             Land Back is not a fringe demand. It is a practical, legal, and increasingly mainstream movement to correct one of the longest-running injustices in American history. It is about returning land that should never have been taken — and in doing so, strengthening tribal sovereignty, protecting the environment, and beginning the long work of healing.
           </p>
+
+          <div className="mb-10 rounded-2xl border border-ochre/30 bg-ochre/5 p-6">
+            <p className="mb-2 text-xs font-semibold tracking-widest uppercase text-ochre-ink">
+              Correction — 22 November 2026
+            </p>
+            <p className="text-base leading-relaxed text-earth-light/85">
+              An earlier version of this article described several land returns
+              that we could not verify against any source, including a transfer
+              of national forest land to the Pueblo of Jemez, a Trust for Public
+              Land return at S&aacute;tt&iacute;tla, a Mount Graham return and a
+              &ldquo;Pronghorn&rdquo; site in Washington. We have replaced them
+              with returns we could document: the Winnebago Land Transfer Act
+              (2024), the Hoopa Valley Tribe&rsquo;s 10,395 acres (2023), the
+              National Bison Range (2021), Blue Lake and Taos Pueblo (1970, with
+              764 acres added in 1996), the Red Cliff Chippewa (2022), the
+              Keweenaw Bay Indian Community and The Nature Conservancy (2024),
+              and the Hassanamisco Nipmuc Band (2025). We should not have
+              published the earlier examples, and we are sorry.
+            </p>
+          </div>
 
           <div className="mb-10 rounded-2xl border border-earth/10 bg-cream-dark p-8 text-center">
             <p className="text-sm italic text-earth-light/85">
