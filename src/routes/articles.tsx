@@ -104,9 +104,9 @@ function ArticlesPage() {
     },
     {
       slug: "/article/meet-the-makers-sarah-ortegon",
-      title: "Meet the Makers: Sarah Ortegon",
+      title: "Withdrawn: Meet the Makers: Sarah Ortegon",
       excerpt:
-        "The Diné (Navajo) artist is carrying a centuries-old weaving tradition into the 21st century, one thread at a time.",
+        "This article has been withdrawn. It contained quotations and claims we could not verify against any source, and we removed it rather than leave it standing.",
       category: "Culture & Storytelling",
       author: "The Indigenous Beacon Editorial Team",
       date: "July 16, 2026",
@@ -271,6 +271,15 @@ function ArticlesPage() {
       {/* ─────── Articles Grid ─────── */}
       <section className="section-padding pt-0">
         <div className="mx-auto max-w-6xl">
+          <div className="mb-8 rounded-2xl border border-earth/20 bg-cream-dark p-5">
+            <p className="text-sm leading-relaxed text-earth-light/85">
+              <strong className="text-earth">A note on our archive.</strong> We
+              are auditing everything we have published against primary sources.
+              Pieces that do not meet that standard are being withdrawn rather
+              than quietly edited — you will see them marked below. We would
+              rather show you the gaps than hide them.
+            </p>
+          </div>
           <div className="relative grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {articles.map((article) => (
               <ArticleCard key={article.slug} {...article} />
