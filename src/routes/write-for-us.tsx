@@ -291,30 +291,29 @@ function WriteForUsPage() {
               </h3>
               <div className="space-y-3 text-base leading-relaxed text-earth-light/85">
                 <p>
-                  We believe in paying writers fairly for their work. Our current
-                  rates:
+                  <strong className="text-earth">
+                    We cannot currently pay for contributions.
+                  </strong>{" "}
+                  The Indigenous Beacon is new and has no budget for commissions
+                  yet. We are not buying articles, photo essays, video, or
+                  curriculum material at this time, and we will not ask anyone to
+                  write on the promise of payment later.
                 </p>
-                <ul className="list-disc pl-5 space-y-1">
-                  <li>
-                    <strong>Written articles</strong> (800–2,500 words): $300–$800
-                  </li>
-                  <li>
-                    <strong>Personal essays</strong> (500–1,500 words): $200–$500
-                  </li>
-                  <li>
-                    <strong>Photo essays</strong> (10–20 images + captions): $400–$700
-                  </li>
-                  <li>
-                    <strong>Video content</strong> (5–15 minutes): $500–$1,500
-                  </li>
-                  <li>
-                    <strong>Lesson plans &amp; curriculum</strong>: $400–$1,000
-                  </li>
-                </ul>
-                <p className="mt-3 text-sm italic">
-                  Rates are negotiable for longer or more complex pieces. We
-                  prioritize paying Native contributors and aim to respond to all
-                  pitches within two weeks.
+                <p>
+                  This page previously listed per-piece rates. That was wrong —
+                  the rates were aspirational and we could not honor them. We
+                  have removed them rather than leave a number standing that we
+                  cannot pay.
+                </p>
+                <p>
+                  If you would still like to publish with us without payment, we
+                  will read your pitch and tell you honestly whether it fits. If
+                  you are looking for paid work, we would rather point you
+                  elsewhere than waste your time.
+                </p>
+                <p className="text-sm italic">
+                  When there is funding for contributors, it will be stated here
+                  with the amount, before anyone writes a word.
                 </p>
               </div>
             </div>
@@ -326,12 +325,15 @@ function WriteForUsPage() {
               <div className="space-y-3 text-base leading-relaxed text-earth-light/85">
                 <ol className="list-decimal pl-5 space-y-2">
                   <li>
-                    <strong>Pitch review</strong> — Our editorial team reviews
-                    your pitch and responds within 2 weeks.
+                    <strong>Pitch review</strong> — We read every pitch that
+                    arrives. We are a small, new publication, so a reply can take
+                    longer than we would like; if you have not heard back in three
+                    weeks, write again.
                   </li>
                   <li>
-                    <strong>Assignment</strong> — If accepted, we'll discuss
-                    scope, timeline, and compensation.
+                    <strong>Assignment</strong> — If accepted, we agree scope and
+                    timeline, and say plainly whether any payment is involved.
+                    Today it is not.
                   </li>
                   <li>
                     <strong>Drafting</strong> — You write the piece. We offer
