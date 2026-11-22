@@ -134,7 +134,7 @@ function TeachingNativeHistoryArticle() {
           <div className="mb-8 space-y-4">
             <div className="rounded-2xl border border-earth/10 bg-white p-6 shadow-sm">
               <h3 className="mb-2 text-lg font-bold text-earth">It reinforces a "past tense" narrative.</h3>
-              <p className="text-base leading-relaxed text-earth-light/85">Students learn that Native people existed before colonization, but they rarely learn about contemporary Native life. A 2019 study by the National Congress of American Indians found that 87% of state history standards do not mention Native history after 1900. This reinforces the false narrative that Native peoples have "vanished" or exist only in museums.</p>
+              <p className="text-base leading-relaxed text-earth-light/85">Students learn that Native people existed before colonization, but they rarely learn about contemporary Native life. Reviews of state academic standards, including work by the National Congress of American Indians, have repeatedly found that required Native American history content tends to stop around 1900, so most students meet Native peoples only as historical figures. This reinforces the false narrative that Native peoples have "vanished" or exist only in museums.</p>
             </div>
             <div className="rounded-2xl border border-earth/10 bg-white p-6 shadow-sm">
               <h3 className="mb-2 text-lg font-bold text-earth">It flattens diversity.</h3>

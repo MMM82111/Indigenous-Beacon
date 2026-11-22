@@ -140,9 +140,9 @@ function WhyWeExistArticle() {
           </p>
           <p className="mb-4 text-lg leading-relaxed text-earth-light/80">
             The problem is not just <em>what</em> gets covered, but{" "}
-            <em>who</em> does the covering. A 2021 report from the Indigenous
-            Journalists Association (formerly NAJA) found that fewer than 1% of
-            newsroom employees in the United States are Native American. This
+            <em>who</em> does the covering. Newsroom employment surveys have long put
+            Native American journalists at well under one percent of the
+            country's newsroom workforce. This
             means the vast majority of stories about Native communities are
             filtered through non-Native perspectives — well-intentioned but
             lacking the context, relationships, and cultural understanding that
