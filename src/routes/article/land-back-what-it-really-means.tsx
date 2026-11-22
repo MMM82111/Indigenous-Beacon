@@ -223,7 +223,7 @@ function LandBackArticle() {
               <div>
                 <h3 className="mb-1 text-lg font-bold text-earth">For the Environment</h3>
                 <p className="text-base leading-relaxed text-earth-light/85">
-                  Research consistently shows that Indigenous-managed lands have higher biodiversity and lower rates of deforestation than adjacent non-Indigenous lands. A 2019 study in the journal <em>Nature</em> found that Indigenous territories in the Amazon — which are often held under insecure tenure — are as effective as protected areas at preventing deforestation. Returning land to Indigenous stewardship is one of the most effective conservation strategies available.
+                  Research consistently shows that Indigenous-managed lands have higher biodiversity and lower rates of deforestation than adjacent non-Indigenous lands. Research on the Amazon has repeatedly found that Indigenous territories, where tenure is secure, can be at least as effective as protected areas at limiting deforestation. Returning land to Indigenous stewardship is one of the most effective conservation strategies available.
                 </p>
               </div>
             </div>
