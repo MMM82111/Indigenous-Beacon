@@ -131,27 +131,27 @@ function ArticlesPage() {
     },
     {
       slug: "/article/data-centers-tribal-lands",
-      title: "The Cloud's New Frontier: Data Centers and Tribal Lands",
+      title: "Withdrawn: The Cloud's New Frontier: Data Centers and Tribal Lands",
       excerpt:
-        "As tech giants race to build data centers across the American West, Native American tribes face a complex new challenge — and an unexpected opportunity.",
+        "This article has been withdrawn. It contained quotations and claims we could not verify against any source, and we removed it rather than leave it standing.",
       category: "Reporting & News",
       author: "The Indigenous Beacon Editorial Team",
       date: "July 16, 2026",
     },
     {
       slug: "/article/tribal-broadband-access",
-      title: "The Last Mile: How Native Nations Are Building Their Way Out of the Digital Divide",
+      title: "Withdrawn: The Last Mile: How Native Nations Are Building Their Way Out of the Digital Divide",
       excerpt:
-        "On tribal lands across the United States, a quiet infrastructure revolution is underway — one fiber optic strand at a time.",
+        "This article has been withdrawn. It contained quotations and claims we could not verify against any source, and we removed it rather than leave it standing.",
       category: "Reporting & News",
       author: "The Indigenous Beacon Editorial Team",
       date: "July 2026",
     },
     {
       slug: "/article/native-representation-in-tech",
-      title: "Coded Invisibility: Native Americans in Tech and the Fight for Representation",
+      title: "Withdrawn: Coded Invisibility: Native Americans in Tech and the Fight for Representation",
       excerpt:
-        "Native people make up less than 1% of the tech workforce. A growing movement is trying to change that — and reshape the future of technology itself.",
+        "This article has been withdrawn. It contained quotations and claims we could not verify against any source, and we removed it rather than leave it standing.",
       category: "Reporting & News",
       author: "The Indigenous Beacon Editorial Team",
       date: "July 2026",

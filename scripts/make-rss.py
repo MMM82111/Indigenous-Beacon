@@ -10,9 +10,13 @@ def esc(t):
     return (t.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
              .replace('"', "&quot;"))
 
+WITHDRAWN = {"data-centers-tribal-lands", "native-representation-in-tech", "tribal-broadband-access"}
+
 items = []
 for path in glob.glob(os.path.join(ART_DIR, "*.tsx")):
     slug = os.path.basename(path)[:-4]
+    if slug in WITHDRAWN:
+        continue
     src = open(path, encoding="utf-8").read()
 
     m = re.search(r'name: "og:title",\s*\n\s*content:\s*\n?\s*"((?:[^"\\]|\\.)*)"', src)
