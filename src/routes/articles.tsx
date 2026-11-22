@@ -43,7 +43,7 @@ function ArticleCard({
         >
       <div className="p-6 sm:p-8">
         <div className="mb-3 flex items-center gap-3">
-          <span className="rounded-full bg-ochre/10 px-3 py-0.5 text-xs font-semibold text-ochre">
+          <span className="rounded-full bg-ochre/10 px-3 py-0.5 text-xs font-semibold text-ochre-ink">
             {category}
           </span>
           {featured && (
@@ -52,12 +52,12 @@ function ArticleCard({
             </span>
           )}
         </div>
-        <h2 className="mb-3 text-xl font-bold text-earth transition-colors group-hover:text-ochre sm:text-2xl">
+        <h2 className="mb-3 text-xl font-bold text-earth transition-colors group-hover:text-ochre-ink sm:text-2xl">
           <Link to={slug} className="after:absolute after:inset-0">
             {title}
           </Link>
         </h2>
-        <p className="mb-4 text-base leading-relaxed text-earth-light/70">
+        <p className="mb-4 text-base leading-relaxed text-earth-light/85">
           {excerpt}
         </p>
         <div className="flex items-center gap-3 text-sm text-earth-light/50">
@@ -208,19 +208,19 @@ function ArticlesPage() {
           <div className="hidden items-center gap-8 sm:flex">
             <Link
               to="/"
-              className="text-sm font-medium text-earth-light/70 transition-colors hover:text-earth"
+              className="text-sm font-medium text-earth-light/85 transition-colors hover:text-earth"
             >
               Home
             </Link>
             <Link
               to="/articles"
-              className="text-sm font-medium text-ochre transition-colors"
+              className="text-sm font-medium text-ochre-ink transition-colors"
             >
               Articles
             </Link>
             <Link
               to="/about"
-              className="text-sm font-medium text-earth-light/70 transition-colors hover:text-earth"
+              className="text-sm font-medium text-earth-light/85 transition-colors hover:text-earth"
             >
               About
             </Link>
@@ -239,9 +239,9 @@ function ArticlesPage() {
               </svg>
             </summary>
             <div className="absolute right-4 top-full mt-2 flex w-48 flex-col gap-2 rounded-xl border border-earth/10 bg-white p-4 shadow-lg">
-              <Link to="/" className="rounded-lg px-3 py-2 text-sm font-medium text-earth-light/70 hover:bg-cream-dark hover:text-earth">Home</Link>
-              <Link to="/articles" className="rounded-lg px-3 py-2 text-sm font-medium text-ochre hover:bg-cream-dark">Articles</Link>
-              <Link to="/about" className="rounded-lg px-3 py-2 text-sm font-medium text-earth-light/70 hover:bg-cream-dark hover:text-earth">About</Link>
+              <Link to="/" className="rounded-lg px-3 py-2 text-sm font-medium text-earth-light/85 hover:bg-cream-dark hover:text-earth">Home</Link>
+              <Link to="/articles" className="rounded-lg px-3 py-2 text-sm font-medium text-ochre-ink hover:bg-cream-dark">Articles</Link>
+              <Link to="/about" className="rounded-lg px-3 py-2 text-sm font-medium text-earth-light/85 hover:bg-cream-dark hover:text-earth">About</Link>
               <a href="/#join" className="rounded-full bg-turquoise px-4 py-2 text-center text-sm font-medium text-white hover:bg-turquoise-dark">Join Us</a>
             </div>
           </details>
@@ -255,13 +255,13 @@ function ArticlesPage() {
           <div className="absolute -bottom-40 -left-40 h-80 w-80 rounded-full bg-turquoise/5 blur-3xl" />
         </div>
         <div className="relative z-10 max-w-3xl">
-          <span className="mb-4 inline-block rounded-full bg-ochre/10 px-4 py-1.5 text-xs font-semibold tracking-widest uppercase text-ochre">
+          <span className="mb-4 inline-block rounded-full bg-ochre/10 px-4 py-1.5 text-xs font-semibold tracking-widest uppercase text-ochre-ink">
             Articles
           </span>
           <h1 className="section-heading mb-6 text-earth">
             Stories that matter
           </h1>
-          <p className="mx-auto max-w-2xl text-lg leading-relaxed text-earth-light/70">
+          <p className="mx-auto max-w-2xl text-lg leading-relaxed text-earth-light/85">
             Original journalism, cultural storytelling, and educational content
             that centers Native voices and perspectives.
           </p>
@@ -285,7 +285,7 @@ function ArticlesPage() {
           <h2 className="section-heading mb-6 text-earth">
             Want to contribute?
           </h2>
-          <p className="mx-auto mb-8 max-w-xl text-lg leading-relaxed text-earth-light/70">
+          <p className="mx-auto mb-8 max-w-xl text-lg leading-relaxed text-earth-light/85">
             We're always looking for Native writers, journalists, educators, and
             storytellers to contribute to The Indigenous Beacon.
           </p>
@@ -334,7 +334,7 @@ function ArticlesPage() {
               </ul>
             </div>
           </div>
-          <div className="mt-12 border-t border-white/10 pt-8 text-center text-sm text-cream-dark/40">
+          <div className="mt-12 border-t border-white/10 pt-8 text-center text-sm text-cream-dark/60">
             &copy; {new Date().getFullYear()} The Indigenous Beacon. All rights reserved.
           </div>
         </div>

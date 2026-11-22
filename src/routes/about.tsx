@@ -37,7 +37,7 @@ function TeamCard({
       </div>
       <h3 className="text-lg font-bold text-earth">{name}</h3>
       <p className="mb-3 text-sm font-medium text-turquoise">{role}</p>
-      <p className="text-sm leading-relaxed text-earth-light/70">{bio}</p>
+      <p className="text-sm leading-relaxed text-earth-light/85">{bio}</p>
     </article>
   );
 }
@@ -60,7 +60,7 @@ function ValueCard({
       </div>
       <div>
         <h3 className="mb-1 font-bold text-earth">{title}</h3>
-        <p className="text-sm leading-relaxed text-earth-light/70">
+        <p className="text-sm leading-relaxed text-earth-light/85">
           {description}
         </p>
       </div>
@@ -89,13 +89,13 @@ function About() {
           <div className="hidden items-center gap-8 sm:flex">
             <Link
               to="/"
-              className="text-sm font-medium text-earth-light/70 transition-colors hover:text-earth"
+              className="text-sm font-medium text-earth-light/85 transition-colors hover:text-earth"
             >
               Home
             </Link>
             <Link
               to="/about"
-              className="text-sm font-medium text-ochre transition-colors"
+              className="text-sm font-medium text-ochre-ink transition-colors"
             >
               About
             </Link>
@@ -114,8 +114,8 @@ function About() {
               </svg>
             </summary>
             <div className="absolute right-4 top-full mt-2 flex w-48 flex-col gap-2 rounded-xl border border-earth/10 bg-white p-4 shadow-lg">
-              <Link to="/" className="rounded-lg px-3 py-2 text-sm font-medium text-earth-light/70 hover:bg-cream-dark hover:text-earth">Home</Link>
-              <Link to="/about" className="rounded-lg px-3 py-2 text-sm font-medium text-ochre hover:bg-cream-dark">About</Link>
+              <Link to="/" className="rounded-lg px-3 py-2 text-sm font-medium text-earth-light/85 hover:bg-cream-dark hover:text-earth">Home</Link>
+              <Link to="/about" className="rounded-lg px-3 py-2 text-sm font-medium text-ochre-ink hover:bg-cream-dark">About</Link>
               <a href="/#join" className="rounded-full bg-turquoise px-4 py-2 text-center text-sm font-medium text-white hover:bg-turquoise-dark">Join Us</a>
             </div>
           </details>
@@ -129,13 +129,13 @@ function About() {
           <div className="absolute -bottom-40 -left-40 h-80 w-80 rounded-full bg-turquoise/5 blur-3xl" />
         </div>
         <div className="relative z-10 max-w-3xl">
-          <span className="mb-4 inline-block rounded-full bg-ochre/10 px-4 py-1.5 text-xs font-semibold tracking-widest uppercase text-ochre">
+          <span className="mb-4 inline-block rounded-full bg-ochre/10 px-4 py-1.5 text-xs font-semibold tracking-widest uppercase text-ochre-ink">
             About Us
           </span>
           <h1 className="section-heading mb-6 text-earth">
             Our story, our mission, our community
           </h1>
-          <p className="mx-auto max-w-2xl text-lg leading-relaxed text-earth-light/70">
+          <p className="mx-auto max-w-2xl text-lg leading-relaxed text-earth-light/85">
             The Indigenous Beacon was founded to fill a critical gap in media — a
             space where Native American stories are told by Native voices, with
             the depth, accuracy, and respect they deserve.
@@ -186,7 +186,7 @@ function About() {
             <h2 className="section-heading mb-6 text-earth">
               Our Mission &amp; Values
             </h2>
-            <p className="text-lg leading-relaxed text-earth-light/70">
+            <p className="text-lg leading-relaxed text-earth-light/85">
               Everything we do is guided by our core principles — the values that
               shape our journalism, our storytelling, and our relationship with
               the communities we serve.
@@ -248,7 +248,7 @@ function About() {
         <div className="mx-auto max-w-6xl">
           <div className="mx-auto mb-16 max-w-3xl text-center">
             <h2 className="section-heading mb-6 text-earth">Our Team</h2>
-            <p className="text-lg leading-relaxed text-earth-light/70">
+            <p className="text-lg leading-relaxed text-earth-light/85">
               The Indigenous Beacon is built by a dedicated team of Native
               journalists, educators, storytellers, and media professionals.
             </p>
@@ -299,7 +299,7 @@ function About() {
       <section className="section-padding">
         <div className="mx-auto max-w-3xl text-center">
           <h2 className="section-heading mb-6 text-earth">Get in Touch</h2>
-          <p className="mx-auto mb-10 max-w-xl text-lg leading-relaxed text-earth-light/70">
+          <p className="mx-auto mb-10 max-w-xl text-lg leading-relaxed text-earth-light/85">
             Have a story idea, feedback, or want to collaborate? We'd love to
             hear from you. Reach out to our team using the information below.
           </p>
@@ -312,7 +312,7 @@ function About() {
                 </svg>
               </div>
               <h3 className="mb-1 font-bold text-earth">Email</h3>
-              <p className="text-sm text-earth-light/70">the-indigenous-beacon-ace6ceac@ctomail.io</p>
+              <p className="text-sm text-earth-light/85">the-indigenous-beacon-ace6ceac@ctomail.io</p>
             </div>
 
             <div className="rounded-2xl border border-earth/10 bg-white p-6 shadow-sm">
@@ -323,7 +323,7 @@ function About() {
                 </svg>
               </div>
               <h3 className="mb-1 font-bold text-earth">Location</h3>
-              <p className="text-sm text-earth-light/70">Turtle Island (North America)</p>
+              <p className="text-sm text-earth-light/85">Turtle Island (North America)</p>
             </div>
 
             <div className="rounded-2xl border border-earth/10 bg-white p-6 shadow-sm">
@@ -333,7 +333,7 @@ function About() {
                 </svg>
               </div>
               <h3 className="mb-1 font-bold text-earth">Social</h3>
-              <p className="text-sm text-earth-light/70">@IndigenousBeacon</p>
+              <p className="text-sm text-earth-light/85">@IndigenousBeacon</p>
             </div>
           </div>
 
@@ -398,7 +398,7 @@ function About() {
                 </svg>
               </button>
               {sent && (
-                <p className="text-sm text-earth-light/70">
+                <p className="text-sm text-earth-light/85">
                   Your email app should have opened with this message ready to
                   send — press send there and it reaches us. If nothing opened,
                   email{" "}
@@ -447,7 +447,7 @@ function About() {
               </ul>
             </div>
           </div>
-          <div className="mt-12 border-t border-white/10 pt-8 text-center text-sm text-cream-dark/40">
+          <div className="mt-12 border-t border-white/10 pt-8 text-center text-sm text-cream-dark/60">
             &copy; {new Date().getFullYear()} The Indigenous Beacon. All rights reserved.
           </div>
         </div>

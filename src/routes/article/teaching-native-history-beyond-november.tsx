@@ -44,19 +44,19 @@ function TeachingNativeHistoryArticle() {
           <div className="hidden items-center gap-8 sm:flex">
             <Link
               to="/"
-              className="text-sm font-medium text-earth-light/70 transition-colors hover:text-earth"
+              className="text-sm font-medium text-earth-light/85 transition-colors hover:text-earth"
             >
               Home
             </Link>
             <Link
               to="/articles"
-              className="text-sm font-medium text-earth-light/70 transition-colors hover:text-ochre"
+              className="text-sm font-medium text-earth-light/85 transition-colors hover:text-ochre-ink"
             >
               Articles
             </Link>
             <Link
               to="/about"
-              className="text-sm font-medium text-earth-light/70 transition-colors hover:text-earth"
+              className="text-sm font-medium text-earth-light/85 transition-colors hover:text-earth"
             >
               About
             </Link>
@@ -75,9 +75,9 @@ function TeachingNativeHistoryArticle() {
               </svg>
             </summary>
             <div className="absolute right-4 top-full mt-2 flex w-48 flex-col gap-2 rounded-xl border border-earth/10 bg-white p-4 shadow-lg">
-              <Link to="/" className="rounded-lg px-3 py-2 text-sm font-medium text-earth-light/70 hover:bg-cream-dark hover:text-earth">Home</Link>
-              <Link to="/articles" className="rounded-lg px-3 py-2 text-sm font-medium text-ochre hover:bg-cream-dark">Articles</Link>
-              <Link to="/about" className="rounded-lg px-3 py-2 text-sm font-medium text-earth-light/70 hover:bg-cream-dark hover:text-earth">About</Link>
+              <Link to="/" className="rounded-lg px-3 py-2 text-sm font-medium text-earth-light/85 hover:bg-cream-dark hover:text-earth">Home</Link>
+              <Link to="/articles" className="rounded-lg px-3 py-2 text-sm font-medium text-ochre-ink hover:bg-cream-dark">Articles</Link>
+              <Link to="/about" className="rounded-lg px-3 py-2 text-sm font-medium text-earth-light/85 hover:bg-cream-dark hover:text-earth">About</Link>
               <a href="/#join" className="rounded-full bg-turquoise px-4 py-2 text-center text-sm font-medium text-white hover:bg-turquoise-dark">Join Us</a>
             </div>
           </details>
@@ -91,7 +91,7 @@ function TeachingNativeHistoryArticle() {
           <div className="absolute -bottom-40 -left-40 h-80 w-80 rounded-full bg-turquoise/5 blur-3xl" />
         </div>
         <div className="relative z-10 max-w-3xl">
-          <span className="mb-4 inline-block rounded-full bg-ochre/10 px-4 py-1.5 text-xs font-semibold tracking-widest uppercase text-ochre">
+          <span className="mb-4 inline-block rounded-full bg-ochre/10 px-4 py-1.5 text-xs font-semibold tracking-widest uppercase text-ochre-ink">
             Education &amp; Curriculum
           </span>
           <h1 className="mb-4 text-3xl font-extrabold tracking-tight text-earth sm:text-4xl md:text-5xl">
@@ -100,7 +100,7 @@ function TeachingNativeHistoryArticle() {
           <p className="mb-6 text-lg font-medium italic text-earth-light/80">
             How educators can integrate Indigenous perspectives into the classroom year-round.
           </p>
-          <div className="flex items-center justify-center gap-4 text-sm text-earth-light/60">
+          <div className="flex items-center justify-center gap-4 text-sm text-earth-light/85">
             <span>The Indigenous Beacon Editorial Team</span>
             <span aria-hidden="true">·</span>
             <time dateTime="2026-07-16">July 16, 2026</time>
@@ -134,15 +134,15 @@ function TeachingNativeHistoryArticle() {
           <div className="mb-8 space-y-4">
             <div className="rounded-2xl border border-earth/10 bg-white p-6 shadow-sm">
               <h3 className="mb-2 text-lg font-bold text-earth">It reinforces a "past tense" narrative.</h3>
-              <p className="text-base leading-relaxed text-earth-light/70">Students learn that Native people existed before colonization, but they rarely learn about contemporary Native life. A 2019 study by the National Congress of American Indians found that 87% of state history standards do not mention Native history after 1900. This reinforces the false narrative that Native peoples have "vanished" or exist only in museums.</p>
+              <p className="text-base leading-relaxed text-earth-light/85">Students learn that Native people existed before colonization, but they rarely learn about contemporary Native life. A 2019 study by the National Congress of American Indians found that 87% of state history standards do not mention Native history after 1900. This reinforces the false narrative that Native peoples have "vanished" or exist only in museums.</p>
             </div>
             <div className="rounded-2xl border border-earth/10 bg-white p-6 shadow-sm">
               <h3 className="mb-2 text-lg font-bold text-earth">It flattens diversity.</h3>
-              <p className="text-base leading-relaxed text-earth-light/70">One November lesson cannot do justice to the diversity of 574 tribal nations. Students may learn about the Wampanoag in November and never encounter the Navajo, the Cherokee, the Lakota, or the dozens of other nations that shape contemporary Native America.</p>
+              <p className="text-base leading-relaxed text-earth-light/85">One November lesson cannot do justice to the diversity of 574 tribal nations. Students may learn about the Wampanoag in November and never encounter the Navajo, the Cherokee, the Lakota, or the dozens of other nations that shape contemporary Native America.</p>
             </div>
             <div className="rounded-2xl border border-earth/10 bg-white p-6 shadow-sm">
               <h3 className="mb-2 text-lg font-bold text-earth">It invites stereotypes.</h3>
-              <p className="text-base leading-relaxed text-earth-light/70">When teachers lack training and resources, they often fall back on generic "Native American" activities — building tipis (which are specific to Plains tribes), making "feather headdresses" (which are specific to certain cultures and contexts), or coloring generic "Indian" pictures.</p>
+              <p className="text-base leading-relaxed text-earth-light/85">When teachers lack training and resources, they often fall back on generic "Native American" activities — building tipis (which are specific to Plains tribes), making "feather headdresses" (which are specific to certain cultures and contexts), or coloring generic "Indian" pictures.</p>
             </div>
           </div>
 
@@ -161,35 +161,35 @@ function TeachingNativeHistoryArticle() {
               <span className="mt-1 text-ochre text-lg font-bold" aria-hidden="true">1</span>
               <div>
                 <h3 className="mb-1 text-lg font-bold text-earth">Start with Sovereignty, Not Stereotypes</h3>
-                <p className="text-base leading-relaxed text-earth-light/70">Before teaching any specific Native content, help students understand the foundational concept of tribal sovereignty. Native nations are not ethnic groups — they are sovereign governments with their own laws, courts, and citizens.</p>
+                <p className="text-base leading-relaxed text-earth-light/85">Before teaching any specific Native content, help students understand the foundational concept of tribal sovereignty. Native nations are not ethnic groups — they are sovereign governments with their own laws, courts, and citizens.</p>
               </div>
             </div>
             <div className="flex gap-4 rounded-xl border border-earth/10 bg-cream p-5">
               <span className="mt-1 text-turquoise text-lg font-bold" aria-hidden="true">2</span>
               <div>
                 <h3 className="mb-1 text-lg font-bold text-earth">Map Local Indigenous Land</h3>
-                <p className="text-base leading-relaxed text-earth-light/70">Every school in the United States sits on the ancestral lands of a specific tribal nation or nations. Begin the year by having students research which Indigenous peoples lived on the land where their school is built. Resources like Native-Land.ca offer free tools for this practice.</p>
+                <p className="text-base leading-relaxed text-earth-light/85">Every school in the United States sits on the ancestral lands of a specific tribal nation or nations. Begin the year by having students research which Indigenous peoples lived on the land where their school is built. Resources like Native-Land.ca offer free tools for this practice.</p>
               </div>
             </div>
             <div className="flex gap-4 rounded-xl border border-earth/10 bg-cream p-5">
               <span className="mt-1 text-crimson text-lg font-bold" aria-hidden="true">3</span>
               <div>
                 <h3 className="mb-1 text-lg font-bold text-earth">Integrate Native Content Across Subjects</h3>
-                <p className="text-base leading-relaxed text-earth-light/70">Native history and contemporary life belong in every subject. Include Native authors like Joy Harjo and Tommy Orange in English curricula. Teach traditional ecological knowledge in science. Study contemporary Native artists in art classes. Use tribal constitutions in civics.</p>
+                <p className="text-base leading-relaxed text-earth-light/85">Native history and contemporary life belong in every subject. Include Native authors like Joy Harjo and Tommy Orange in English curricula. Teach traditional ecological knowledge in science. Study contemporary Native artists in art classes. Use tribal constitutions in civics.</p>
               </div>
             </div>
             <div className="flex gap-4 rounded-xl border border-earth/10 bg-cream p-5">
               <span className="mt-1 text-sage text-lg font-bold" aria-hidden="true">4</span>
               <div>
                 <h3 className="mb-1 text-lg font-bold text-earth">Use Native-Led Resources</h3>
-                <p className="text-base leading-relaxed text-earth-light/70">Organizations like the National Museum of the American Indian, IllumiNative, and the Indigenous Journalists Association offer free, accurate, Native-led resources. Use materials created by Native people for the most authentic perspectives.</p>
+                <p className="text-base leading-relaxed text-earth-light/85">Organizations like the National Museum of the American Indian, IllumiNative, and the Indigenous Journalists Association offer free, accurate, Native-led resources. Use materials created by Native people for the most authentic perspectives.</p>
               </div>
             </div>
             <div className="flex gap-4 rounded-xl border border-earth/10 bg-cream p-5">
               <span className="mt-1 text-ochre text-lg font-bold" aria-hidden="true">5</span>
               <div>
                 <h3 className="mb-1 text-lg font-bold text-earth">Teach Contemporary Native Life</h3>
-                <p className="text-base leading-relaxed text-earth-light/70">Every unit on Native history should include a contemporary component. When teaching about the Trail of Tears, also teach about Cherokee language revitalization today. When teaching about the fur trade, also teach about modern tribal natural resource management.</p>
+                <p className="text-base leading-relaxed text-earth-light/85">Every unit on Native history should include a contemporary component. When teaching about the Trail of Tears, also teach about Cherokee language revitalization today. When teaching about the fur trade, also teach about modern tribal natural resource management.</p>
               </div>
             </div>
           </div>
@@ -216,48 +216,48 @@ function TeachingNativeHistoryArticle() {
               <tbody className="divide-y divide-earth/10">
                 <tr className="bg-white">
                   <td className="px-4 py-3 font-medium text-earth">Aug/Sep</td>
-                  <td className="px-4 py-3 text-earth-light/70">Local Indigenous land and peoples</td>
-                  <td className="px-4 py-3 text-earth-light/70">Land acknowledgment research, local tribal history</td>
+                  <td className="px-4 py-3 text-earth-light/85">Local Indigenous land and peoples</td>
+                  <td className="px-4 py-3 text-earth-light/85">Land acknowledgment research, local tribal history</td>
                 </tr>
                 <tr className="bg-cream-dark/50">
                   <td className="px-4 py-3 font-medium text-earth">October</td>
-                  <td className="px-4 py-3 text-earth-light/70">Indigenous sovereignty and governance</td>
-                  <td className="px-4 py-3 text-earth-light/70">Tribal constitutions, treaty rights, citizenship</td>
+                  <td className="px-4 py-3 text-earth-light/85">Indigenous sovereignty and governance</td>
+                  <td className="px-4 py-3 text-earth-light/85">Tribal constitutions, treaty rights, citizenship</td>
                 </tr>
                 <tr className="bg-white">
                   <td className="px-4 py-3 font-medium text-earth">November</td>
-                  <td className="px-4 py-3 text-earth-light/70">Accurate Thanksgiving history (with context)</td>
-                  <td className="px-4 py-3 text-earth-light/70">Primary sources, Wampanoag perspectives, beyond the myth</td>
+                  <td className="px-4 py-3 text-earth-light/85">Accurate Thanksgiving history (with context)</td>
+                  <td className="px-4 py-3 text-earth-light/85">Primary sources, Wampanoag perspectives, beyond the myth</td>
                 </tr>
                 <tr className="bg-cream-dark/50">
                   <td className="px-4 py-3 font-medium text-earth">December</td>
-                  <td className="px-4 py-3 text-earth-light/70">Native winter celebrations</td>
-                  <td className="px-4 py-3 text-earth-light/70">Winter solstice, cultural diversity across nations</td>
+                  <td className="px-4 py-3 text-earth-light/85">Native winter celebrations</td>
+                  <td className="px-4 py-3 text-earth-light/85">Winter solstice, cultural diversity across nations</td>
                 </tr>
                 <tr className="bg-white">
                   <td className="px-4 py-3 font-medium text-earth">January</td>
-                  <td className="px-4 py-3 text-earth-light/70">Native literature and storytelling</td>
-                  <td className="px-4 py-3 text-earth-light/70">Contemporary Native authors, oral traditions</td>
+                  <td className="px-4 py-3 text-earth-light/85">Native literature and storytelling</td>
+                  <td className="px-4 py-3 text-earth-light/85">Contemporary Native authors, oral traditions</td>
                 </tr>
                 <tr className="bg-cream-dark/50">
                   <td className="px-4 py-3 font-medium text-earth">February</td>
-                  <td className="px-4 py-3 text-earth-light/70">Native contributions to US history</td>
-                  <td className="px-4 py-3 text-earth-light/70">Code talkers, Native military service, activism</td>
+                  <td className="px-4 py-3 text-earth-light/85">Native contributions to US history</td>
+                  <td className="px-4 py-3 text-earth-light/85">Code talkers, Native military service, activism</td>
                 </tr>
                 <tr className="bg-white">
                   <td className="px-4 py-3 font-medium text-earth">March</td>
-                  <td className="px-4 py-3 text-earth-light/70">Women's History — Native women leaders</td>
-                  <td className="px-4 py-3 text-earth-light/70">Wilma Mankiller, Winona LaDuke, Sharice Davids</td>
+                  <td className="px-4 py-3 text-earth-light/85">Women's History — Native women leaders</td>
+                  <td className="px-4 py-3 text-earth-light/85">Wilma Mankiller, Winona LaDuke, Sharice Davids</td>
                 </tr>
                 <tr className="bg-cream-dark/50">
                   <td className="px-4 py-3 font-medium text-earth">April</td>
-                  <td className="px-4 py-3 text-earth-light/70">Environmental justice and traditional knowledge</td>
-                  <td className="px-4 py-3 text-earth-light/70">Indigenous stewardship, land back, water protectors</td>
+                  <td className="px-4 py-3 text-earth-light/85">Environmental justice and traditional knowledge</td>
+                  <td className="px-4 py-3 text-earth-light/85">Indigenous stewardship, land back, water protectors</td>
                 </tr>
                 <tr className="bg-white">
                   <td className="px-4 py-3 font-medium text-earth">May</td>
-                  <td className="px-4 py-3 text-earth-light/70">Contemporary Native life and futures</td>
-                  <td className="px-4 py-3 text-earth-light/70">Native artists, entrepreneurs, scientists, and youth</td>
+                  <td className="px-4 py-3 text-earth-light/85">Contemporary Native life and futures</td>
+                  <td className="px-4 py-3 text-earth-light/85">Native artists, entrepreneurs, scientists, and youth</td>
                 </tr>
               </tbody>
             </table>
@@ -274,7 +274,7 @@ function TeachingNativeHistoryArticle() {
           </p>
 
           <div className="mb-10 rounded-2xl border border-earth/10 bg-cream-dark p-8 text-center">
-            <p className="text-sm italic text-earth-light/60">
+            <p className="text-sm italic text-earth-light/85">
               The Indigenous Beacon offers free and licensed curriculum resources for K-12 and higher education.
             </p>
           </div>
@@ -335,7 +335,7 @@ function TeachingNativeHistoryArticle() {
               </ul>
             </div>
           </div>
-          <div className="mt-12 border-t border-white/10 pt-8 text-center text-sm text-cream-dark/40">
+          <div className="mt-12 border-t border-white/10 pt-8 text-center text-sm text-cream-dark/60">
             &copy; {new Date().getFullYear()} The Indigenous Beacon. All rights reserved.
           </div>
         </div>

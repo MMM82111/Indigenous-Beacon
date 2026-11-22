@@ -44,19 +44,19 @@ function NativeIdentityArticle() {
           <div className="hidden items-center gap-8 sm:flex">
             <Link
               to="/"
-              className="text-sm font-medium text-earth-light/70 transition-colors hover:text-earth"
+              className="text-sm font-medium text-earth-light/85 transition-colors hover:text-earth"
             >
               Home
             </Link>
             <Link
               to="/articles"
-              className="text-sm font-medium text-earth-light/70 transition-colors hover:text-ochre"
+              className="text-sm font-medium text-earth-light/85 transition-colors hover:text-ochre-ink"
             >
               Articles
             </Link>
             <Link
               to="/about"
-              className="text-sm font-medium text-earth-light/70 transition-colors hover:text-earth"
+              className="text-sm font-medium text-earth-light/85 transition-colors hover:text-earth"
             >
               About
             </Link>
@@ -75,9 +75,9 @@ function NativeIdentityArticle() {
               </svg>
             </summary>
             <div className="absolute right-4 top-full mt-2 flex w-48 flex-col gap-2 rounded-xl border border-earth/10 bg-white p-4 shadow-lg">
-              <Link to="/" className="rounded-lg px-3 py-2 text-sm font-medium text-earth-light/70 hover:bg-cream-dark hover:text-earth">Home</Link>
-              <Link to="/articles" className="rounded-lg px-3 py-2 text-sm font-medium text-ochre hover:bg-cream-dark">Articles</Link>
-              <Link to="/about" className="rounded-lg px-3 py-2 text-sm font-medium text-earth-light/70 hover:bg-cream-dark hover:text-earth">About</Link>
+              <Link to="/" className="rounded-lg px-3 py-2 text-sm font-medium text-earth-light/85 hover:bg-cream-dark hover:text-earth">Home</Link>
+              <Link to="/articles" className="rounded-lg px-3 py-2 text-sm font-medium text-ochre-ink hover:bg-cream-dark">Articles</Link>
+              <Link to="/about" className="rounded-lg px-3 py-2 text-sm font-medium text-earth-light/85 hover:bg-cream-dark hover:text-earth">About</Link>
               <a href="/#join" className="rounded-full bg-turquoise px-4 py-2 text-center text-sm font-medium text-white hover:bg-turquoise-dark">Join Us</a>
             </div>
           </details>
@@ -91,7 +91,7 @@ function NativeIdentityArticle() {
           <div className="absolute -bottom-40 -left-40 h-80 w-80 rounded-full bg-turquoise/5 blur-3xl" />
         </div>
         <div className="relative z-10 max-w-3xl">
-          <span className="mb-4 inline-block rounded-full bg-ochre/10 px-4 py-1.5 text-xs font-semibold tracking-widest uppercase text-ochre">
+          <span className="mb-4 inline-block rounded-full bg-ochre/10 px-4 py-1.5 text-xs font-semibold tracking-widest uppercase text-ochre-ink">
             Culture &amp; Identity
           </span>
           <h1 className="mb-4 text-3xl font-extrabold tracking-tight text-earth sm:text-4xl md:text-5xl">
@@ -100,7 +100,7 @@ function NativeIdentityArticle() {
           <p className="mb-6 text-lg font-medium italic text-earth-light/80">
             An introduction to the complexity, diversity, and resilience of contemporary Native American identity.
           </p>
-          <div className="flex items-center justify-center gap-4 text-sm text-earth-light/60">
+          <div className="flex items-center justify-center gap-4 text-sm text-earth-light/85">
             <span>The Indigenous Beacon Editorial Team</span>
             <span aria-hidden="true">·</span>
             <time dateTime="2026-07-16">July 16, 2026</time>
@@ -219,10 +219,10 @@ function NativeIdentityArticle() {
           </p>
 
           <div className="mb-10 rounded-2xl border border-earth/10 bg-cream-dark p-8 text-center">
-            <p className="text-sm italic text-earth-light/60">
+            <p className="text-sm italic text-earth-light/85">
               This is Part 1 of a four-part series. Next: "Native Identity in the Age of DNA Tests and Tribal Enrollment."
             </p>
-            <p className="mt-3 text-sm italic text-earth-light/60">
+            <p className="mt-3 text-sm italic text-earth-light/85">
               The Indigenous Beacon is a Native-led digital media and education platform.
             </p>
           </div>
@@ -283,7 +283,7 @@ function NativeIdentityArticle() {
               </ul>
             </div>
           </div>
-          <div className="mt-12 border-t border-white/10 pt-8 text-center text-sm text-cream-dark/40">
+          <div className="mt-12 border-t border-white/10 pt-8 text-center text-sm text-cream-dark/60">
             &copy; {new Date().getFullYear()} The Indigenous Beacon. All rights reserved.
           </div>
         </div>

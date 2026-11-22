@@ -33,7 +33,7 @@ function GuidelineCard({
         {icon}
       </div>
       <h3 className="mb-3 text-xl font-bold text-earth">{title}</h3>
-      <div className="space-y-2 text-base leading-relaxed text-earth-light/70">
+      <div className="space-y-2 text-base leading-relaxed text-earth-light/85">
         {children}
       </div>
     </div>
@@ -57,19 +57,19 @@ function WriteForUsPage() {
           <div className="hidden items-center gap-8 sm:flex">
             <Link
               to="/"
-              className="text-sm font-medium text-earth-light/70 transition-colors hover:text-earth"
+              className="text-sm font-medium text-earth-light/85 transition-colors hover:text-earth"
             >
               Home
             </Link>
             <Link
               to="/articles"
-              className="text-sm font-medium text-earth-light/70 transition-colors hover:text-earth"
+              className="text-sm font-medium text-earth-light/85 transition-colors hover:text-earth"
             >
               Articles
             </Link>
             <Link
               to="/about"
-              className="text-sm font-medium text-earth-light/70 transition-colors hover:text-earth"
+              className="text-sm font-medium text-earth-light/85 transition-colors hover:text-earth"
             >
               About
             </Link>
@@ -88,9 +88,9 @@ function WriteForUsPage() {
               </svg>
             </summary>
             <div className="absolute right-4 top-full mt-2 flex w-48 flex-col gap-2 rounded-xl border border-earth/10 bg-white p-4 shadow-lg">
-              <Link to="/" className="rounded-lg px-3 py-2 text-sm font-medium text-earth-light/70 hover:bg-cream-dark hover:text-earth">Home</Link>
-              <Link to="/articles" className="rounded-lg px-3 py-2 text-sm font-medium text-earth-light/70 hover:bg-cream-dark hover:text-earth">Articles</Link>
-              <Link to="/about" className="rounded-lg px-3 py-2 text-sm font-medium text-earth-light/70 hover:bg-cream-dark hover:text-earth">About</Link>
+              <Link to="/" className="rounded-lg px-3 py-2 text-sm font-medium text-earth-light/85 hover:bg-cream-dark hover:text-earth">Home</Link>
+              <Link to="/articles" className="rounded-lg px-3 py-2 text-sm font-medium text-earth-light/85 hover:bg-cream-dark hover:text-earth">Articles</Link>
+              <Link to="/about" className="rounded-lg px-3 py-2 text-sm font-medium text-earth-light/85 hover:bg-cream-dark hover:text-earth">About</Link>
               <a href="/#join" className="rounded-full bg-turquoise px-4 py-2 text-center text-sm font-medium text-white hover:bg-turquoise-dark">Join Us</a>
             </div>
           </details>
@@ -104,13 +104,13 @@ function WriteForUsPage() {
           <div className="absolute -bottom-40 -left-40 h-80 w-80 rounded-full bg-turquoise/5 blur-3xl" />
         </div>
         <div className="relative z-10 max-w-3xl">
-          <span className="mb-4 inline-block rounded-full bg-ochre/10 px-4 py-1.5 text-xs font-semibold tracking-widest uppercase text-ochre">
+          <span className="mb-4 inline-block rounded-full bg-ochre/10 px-4 py-1.5 text-xs font-semibold tracking-widest uppercase text-ochre-ink">
             Contribute
           </span>
           <h1 className="section-heading mb-6 text-earth">
             Write for The Indigenous Beacon
           </h1>
-          <p className="mx-auto max-w-2xl text-lg leading-relaxed text-earth-light/70">
+          <p className="mx-auto max-w-2xl text-lg leading-relaxed text-earth-light/85">
             We are actively seeking pitches from Native writers, journalists,
             educators, and storytellers who want to amplify Indigenous voices and
             perspectives.
@@ -154,7 +154,7 @@ function WriteForUsPage() {
             <h2 className="section-heading mb-6 text-earth">
               Editorial Focus Areas
             </h2>
-            <p className="text-lg leading-relaxed text-earth-light/70">
+            <p className="text-lg leading-relaxed text-earth-light/85">
               We publish across four interconnected content pillars. Your pitch
               should align with one or more of these areas.
             </p>
@@ -255,7 +255,7 @@ function WriteForUsPage() {
               <h3 className="mb-3 text-xl font-bold text-earth">
                 How to Pitch
               </h3>
-              <div className="space-y-3 text-base leading-relaxed text-earth-light/70">
+              <div className="space-y-3 text-base leading-relaxed text-earth-light/85">
                 <p>
                   Send a brief pitch (200–300 words) to{" "}
                   <strong className="text-earth">the-indigenous-beacon-ace6ceac@ctomail.io</strong>{" "}
@@ -289,7 +289,7 @@ function WriteForUsPage() {
               <h3 className="mb-3 text-xl font-bold text-earth">
                 Rates &amp; Compensation
               </h3>
-              <div className="space-y-3 text-base leading-relaxed text-earth-light/70">
+              <div className="space-y-3 text-base leading-relaxed text-earth-light/85">
                 <p>
                   We believe in paying writers fairly for their work. Our current
                   rates:
@@ -323,7 +323,7 @@ function WriteForUsPage() {
               <h3 className="mb-3 text-xl font-bold text-earth">
                 Editorial Process
               </h3>
-              <div className="space-y-3 text-base leading-relaxed text-earth-light/70">
+              <div className="space-y-3 text-base leading-relaxed text-earth-light/85">
                 <ol className="list-decimal pl-5 space-y-2">
                   <li>
                     <strong>Pitch review</strong> — Our editorial team reviews
@@ -353,7 +353,7 @@ function WriteForUsPage() {
               <h3 className="mb-3 text-xl font-bold text-earth">
                 What We're Looking For
               </h3>
-              <div className="space-y-3 text-base leading-relaxed text-earth-light/70">
+              <div className="space-y-3 text-base leading-relaxed text-earth-light/85">
                 <ul className="list-disc pl-5 space-y-1">
                   <li>
                     <strong>Originality</strong> — Stories that haven't been told
@@ -388,7 +388,7 @@ function WriteForUsPage() {
           <h2 className="section-heading mb-6 text-earth">
             Ready to pitch?
           </h2>
-          <p className="mx-auto mb-10 max-w-xl text-lg leading-relaxed text-earth-light/70">
+          <p className="mx-auto mb-10 max-w-xl text-lg leading-relaxed text-earth-light/85">
             Send your pitch to{" "}
             <strong className="text-earth">the-indigenous-beacon-ace6ceac@ctomail.io</strong>.
             We look forward to reading your work.
@@ -446,7 +446,7 @@ function WriteForUsPage() {
               </ul>
             </div>
           </div>
-          <div className="mt-12 border-t border-white/10 pt-8 text-center text-sm text-cream-dark/40">
+          <div className="mt-12 border-t border-white/10 pt-8 text-center text-sm text-cream-dark/60">
             &copy; {new Date().getFullYear()} The Indigenous Beacon. All rights reserved.
           </div>
         </div>

@@ -46,19 +46,19 @@ function IcwaAfterBrackeen() {
           <div className="hidden items-center gap-8 sm:flex">
             <Link
               to="/"
-              className="text-sm font-medium text-earth-light/70 transition-colors hover:text-earth"
+              className="text-sm font-medium text-earth-light/85 transition-colors hover:text-earth"
             >
               Home
             </Link>
             <Link
               to="/articles"
-              className="text-sm font-medium text-earth-light/70 transition-colors hover:text-ochre"
+              className="text-sm font-medium text-earth-light/85 transition-colors hover:text-ochre-ink"
             >
               Articles
             </Link>
             <Link
               to="/about"
-              className="text-sm font-medium text-earth-light/70 transition-colors hover:text-earth"
+              className="text-sm font-medium text-earth-light/85 transition-colors hover:text-earth"
             >
               About
             </Link>
@@ -77,9 +77,9 @@ function IcwaAfterBrackeen() {
               </svg>
             </summary>
             <div className="absolute right-4 top-full mt-2 flex w-48 flex-col gap-2 rounded-xl border border-earth/10 bg-white p-4 shadow-lg">
-              <Link to="/" className="rounded-lg px-3 py-2 text-sm font-medium text-earth-light/70 hover:bg-cream-dark hover:text-earth">Home</Link>
-              <Link to="/articles" className="rounded-lg px-3 py-2 text-sm font-medium text-ochre hover:bg-cream-dark">Articles</Link>
-              <Link to="/about" className="rounded-lg px-3 py-2 text-sm font-medium text-earth-light/70 hover:bg-cream-dark hover:text-earth">About</Link>
+              <Link to="/" className="rounded-lg px-3 py-2 text-sm font-medium text-earth-light/85 hover:bg-cream-dark hover:text-earth">Home</Link>
+              <Link to="/articles" className="rounded-lg px-3 py-2 text-sm font-medium text-ochre-ink hover:bg-cream-dark">Articles</Link>
+              <Link to="/about" className="rounded-lg px-3 py-2 text-sm font-medium text-earth-light/85 hover:bg-cream-dark hover:text-earth">About</Link>
               <a href="/#join" className="rounded-full bg-turquoise px-4 py-2 text-center text-sm font-medium text-white hover:bg-turquoise-dark">Join Us</a>
             </div>
           </details>
@@ -93,7 +93,7 @@ function IcwaAfterBrackeen() {
           <div className="absolute -bottom-40 -left-40 h-80 w-80 rounded-full bg-turquoise/5 blur-3xl" />
         </div>
         <div className="relative z-10 max-w-3xl">
-          <span className="mb-4 inline-block rounded-full bg-ochre/10 px-4 py-1.5 text-xs font-semibold tracking-widest uppercase text-ochre">
+          <span className="mb-4 inline-block rounded-full bg-ochre/10 px-4 py-1.5 text-xs font-semibold tracking-widest uppercase text-ochre-ink">
             Law &amp; Sovereignty
           </span>
           <h1 className="mb-4 text-3xl font-extrabold tracking-tight text-earth sm:text-4xl md:text-5xl">
@@ -102,7 +102,7 @@ function IcwaAfterBrackeen() {
           <p className="mb-6 text-lg font-medium italic text-earth-light/80">
             The Indian Child Welfare Act survived the Supreme Court in 2023. Here is what the law actually requires of state agencies — and which questions the Court never answered.
           </p>
-          <div className="flex items-center justify-center gap-4 text-sm text-earth-light/60">
+          <div className="flex items-center justify-center gap-4 text-sm text-earth-light/85">
             <span>The Indigenous Beacon Editorial Team</span>
             <span aria-hidden="true">·</span>
             <time dateTime="2026-11-09">November 9, 2026</time>
@@ -221,7 +221,7 @@ function IcwaAfterBrackeen() {
             <h3 className="mb-3 text-sm font-semibold tracking-wider uppercase text-earth">
               Sources
             </h3>
-            <ul className="space-y-2 text-sm leading-relaxed text-earth-light/70">
+            <ul className="space-y-2 text-sm leading-relaxed text-earth-light/85">
               <li>· National Indian Child Welfare Association, “What is ICWA?” — https://www.nicwa.org/what-is-icwa/</li>
               <li>· <em>Haaland v. Brackeen</em>, 599 U.S. 255 (2023) — https://en.wikipedia.org/wiki/Haaland_v._Brackeen</li>
               <li>· Indian Child Welfare Act of 1978, 25 U.S.C. § 1901 et seq. (definition of “Indian child” at § 1903)</li>
@@ -287,7 +287,7 @@ function IcwaAfterBrackeen() {
               </ul>
             </div>
           </div>
-          <div className="mt-12 border-t border-white/10 pt-8 text-center text-sm text-cream-dark/40">
+          <div className="mt-12 border-t border-white/10 pt-8 text-center text-sm text-cream-dark/60">
             &copy; {new Date().getFullYear()} The Indigenous Beacon. All rights reserved.
           </div>
         </div>

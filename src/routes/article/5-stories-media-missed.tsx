@@ -44,19 +44,19 @@ function FiveStoriesArticle() {
           <div className="hidden items-center gap-8 sm:flex">
             <Link
               to="/"
-              className="text-sm font-medium text-earth-light/70 transition-colors hover:text-earth"
+              className="text-sm font-medium text-earth-light/85 transition-colors hover:text-earth"
             >
               Home
             </Link>
             <Link
               to="/articles"
-              className="text-sm font-medium text-earth-light/70 transition-colors hover:text-ochre"
+              className="text-sm font-medium text-earth-light/85 transition-colors hover:text-ochre-ink"
             >
               Articles
             </Link>
             <Link
               to="/about"
-              className="text-sm font-medium text-earth-light/70 transition-colors hover:text-earth"
+              className="text-sm font-medium text-earth-light/85 transition-colors hover:text-earth"
             >
               About
             </Link>
@@ -75,9 +75,9 @@ function FiveStoriesArticle() {
               </svg>
             </summary>
             <div className="absolute right-4 top-full mt-2 flex w-48 flex-col gap-2 rounded-xl border border-earth/10 bg-white p-4 shadow-lg">
-              <Link to="/" className="rounded-lg px-3 py-2 text-sm font-medium text-earth-light/70 hover:bg-cream-dark hover:text-earth">Home</Link>
-              <Link to="/articles" className="rounded-lg px-3 py-2 text-sm font-medium text-ochre hover:bg-cream-dark">Articles</Link>
-              <Link to="/about" className="rounded-lg px-3 py-2 text-sm font-medium text-earth-light/70 hover:bg-cream-dark hover:text-earth">About</Link>
+              <Link to="/" className="rounded-lg px-3 py-2 text-sm font-medium text-earth-light/85 hover:bg-cream-dark hover:text-earth">Home</Link>
+              <Link to="/articles" className="rounded-lg px-3 py-2 text-sm font-medium text-ochre-ink hover:bg-cream-dark">Articles</Link>
+              <Link to="/about" className="rounded-lg px-3 py-2 text-sm font-medium text-earth-light/85 hover:bg-cream-dark hover:text-earth">About</Link>
               <a href="/#join" className="rounded-full bg-turquoise px-4 py-2 text-center text-sm font-medium text-white hover:bg-turquoise-dark">Join Us</a>
             </div>
           </details>
@@ -91,7 +91,7 @@ function FiveStoriesArticle() {
           <div className="absolute -bottom-40 -left-40 h-80 w-80 rounded-full bg-turquoise/5 blur-3xl" />
         </div>
         <div className="relative z-10 max-w-3xl">
-          <span className="mb-4 inline-block rounded-full bg-ochre/10 px-4 py-1.5 text-xs font-semibold tracking-widest uppercase text-ochre">
+          <span className="mb-4 inline-block rounded-full bg-ochre/10 px-4 py-1.5 text-xs font-semibold tracking-widest uppercase text-ochre-ink">
             Reporting &amp; News
           </span>
           <h1 className="mb-4 text-3xl font-extrabold tracking-tight text-earth sm:text-4xl md:text-5xl">
@@ -100,7 +100,7 @@ function FiveStoriesArticle() {
           <p className="mb-6 text-lg font-medium italic text-earth-light/80">
             A roundup of under-covered Native news that deserves your attention.
           </p>
-          <div className="flex items-center justify-center gap-4 text-sm text-earth-light/60">
+          <div className="flex items-center justify-center gap-4 text-sm text-earth-light/85">
             <span>The Indigenous Beacon Editorial Team</span>
             <span aria-hidden="true">·</span>
             <time dateTime="2026-07-16">July 16, 2026</time>
@@ -135,7 +135,7 @@ function FiveStoriesArticle() {
           </p>
           <div className="mb-8 rounded-2xl border border-earth/10 bg-cream p-5">
             <p className="text-base font-bold text-earth">Why it matters:</p>
-            <p className="text-base leading-relaxed text-earth-light/70">Land back is not a radical fringe movement. It is federal policy, and it is happening. The Pueblo of Jemez land transfer is a model for how other tribes can reclaim ancestral lands through negotiated, legal channels.</p>
+            <p className="text-base leading-relaxed text-earth-light/85">Land back is not a radical fringe movement. It is federal policy, and it is happening. The Pueblo of Jemez land transfer is a model for how other tribes can reclaim ancestral lands through negotiated, legal channels.</p>
           </div>
 
           <hr className="my-10 border-earth/10" />
@@ -152,7 +152,7 @@ function FiveStoriesArticle() {
           </p>
           <div className="mb-8 rounded-2xl border border-earth/10 bg-cream p-5">
             <p className="text-base font-bold text-earth">Why it matters:</p>
-            <p className="text-base leading-relaxed text-earth-light/70">Language is the carrier of culture. When a language dies, the knowledge, stories, and ways of thinking embedded in that language die with it. The Cherokee Nation's investment in immersion education is a model for what Indigenous language revitalization looks like at scale.</p>
+            <p className="text-base leading-relaxed text-earth-light/85">Language is the carrier of culture. When a language dies, the knowledge, stories, and ways of thinking embedded in that language die with it. The Cherokee Nation's investment in immersion education is a model for what Indigenous language revitalization looks like at scale.</p>
           </div>
 
           <hr className="my-10 border-earth/10" />
@@ -169,7 +169,7 @@ function FiveStoriesArticle() {
           </p>
           <div className="mb-8 rounded-2xl border border-earth/10 bg-cream p-5">
             <p className="text-base font-bold text-earth">Why it matters:</p>
-            <p className="text-base leading-relaxed text-earth-light/70">ICWA is one of the most important federal laws protecting Native children and families. The Supreme Court upheld it, but laws are only as strong as their enforcement. This story is a reminder that legal victories require ongoing vigilance.</p>
+            <p className="text-base leading-relaxed text-earth-light/85">ICWA is one of the most important federal laws protecting Native children and families. The Supreme Court upheld it, but laws are only as strong as their enforcement. This story is a reminder that legal victories require ongoing vigilance.</p>
           </div>
 
           <hr className="my-10 border-earth/10" />
@@ -186,7 +186,7 @@ function FiveStoriesArticle() {
           </p>
           <div className="mb-8 rounded-2xl border border-earth/10 bg-cream p-5">
             <p className="text-base font-bold text-earth">Why it matters:</p>
-            <p className="text-base leading-relaxed text-earth-light/70">The boarding school era is one of the most traumatic chapters in Native American history, and it is only beginning to receive the public attention it deserves. For Native communities, this is not history — it is intergenerational trauma that continues to shape family and community life today.</p>
+            <p className="text-base leading-relaxed text-earth-light/85">The boarding school era is one of the most traumatic chapters in Native American history, and it is only beginning to receive the public attention it deserves. For Native communities, this is not history — it is intergenerational trauma that continues to shape family and community life today.</p>
           </div>
 
           <hr className="my-10 border-earth/10" />
@@ -206,7 +206,7 @@ function FiveStoriesArticle() {
           </p>
           <div className="mb-8 rounded-2xl border border-earth/10 bg-cream p-5">
             <p className="text-base font-bold text-earth">Why it matters:</p>
-            <p className="text-base leading-relaxed text-earth-light/70">Food sovereignty is one of the most concrete expressions of tribal sovereignty. When a nation can feed itself, it is less dependent on federal programs and external supply chains. It also means communities can reconnect with traditional foods central to cultural identity and spiritual practice.</p>
+            <p className="text-base leading-relaxed text-earth-light/85">Food sovereignty is one of the most concrete expressions of tribal sovereignty. When a nation can feed itself, it is less dependent on federal programs and external supply chains. It also means communities can reconnect with traditional foods central to cultural identity and spiritual practice.</p>
           </div>
 
           <hr className="my-10 border-earth/10" />
@@ -220,7 +220,7 @@ function FiveStoriesArticle() {
           </p>
 
           <div className="mb-10 rounded-2xl border border-earth/10 bg-cream-dark p-8 text-center">
-            <p className="text-sm italic text-earth-light/60">
+            <p className="text-sm italic text-earth-light/85">
               The Indigenous Beacon is committed to covering these stories and the many others that mainstream media overlooks.
             </p>
           </div>
@@ -281,7 +281,7 @@ function FiveStoriesArticle() {
               </ul>
             </div>
           </div>
-          <div className="mt-12 border-t border-white/10 pt-8 text-center text-sm text-cream-dark/40">
+          <div className="mt-12 border-t border-white/10 pt-8 text-center text-sm text-cream-dark/60">
             &copy; {new Date().getFullYear()} The Indigenous Beacon. All rights reserved.
           </div>
         </div>

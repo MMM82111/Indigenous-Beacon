@@ -40,7 +40,7 @@ function UseCard({
         {status}
       </span>
       <h3 className="mb-2 text-lg font-bold text-earth">{title}</h3>
-      <p className="text-sm leading-relaxed text-earth-light/70">{description}</p>
+      <p className="text-sm leading-relaxed text-earth-light/85">{description}</p>
     </div>
   );
 }
@@ -68,19 +68,19 @@ function Educators() {
           <div className="hidden items-center gap-8 sm:flex">
             <Link
               to="/"
-              className="text-sm font-medium text-earth-light/70 transition-colors hover:text-earth"
+              className="text-sm font-medium text-earth-light/85 transition-colors hover:text-earth"
             >
               Home
             </Link>
             <Link
               to="/articles"
-              className="text-sm font-medium text-earth-light/70 transition-colors hover:text-earth"
+              className="text-sm font-medium text-earth-light/85 transition-colors hover:text-earth"
             >
               Articles
             </Link>
             <Link
               to="/educators"
-              className="text-sm font-medium text-ochre transition-colors"
+              className="text-sm font-medium text-ochre-ink transition-colors"
             >
               For Educators
             </Link>
@@ -98,9 +98,9 @@ function Educators() {
               </svg>
             </summary>
             <div className="absolute right-4 top-full mt-2 flex w-48 flex-col gap-2 rounded-xl border border-earth/10 bg-white p-4 shadow-lg">
-              <Link to="/" className="rounded-lg px-3 py-2 text-sm font-medium text-earth-light/70 hover:bg-cream-dark hover:text-earth">Home</Link>
-              <Link to="/articles" className="rounded-lg px-3 py-2 text-sm font-medium text-earth-light/70 hover:bg-cream-dark hover:text-earth">Articles</Link>
-              <Link to="/educators" className="rounded-lg px-3 py-2 text-sm font-medium text-ochre hover:bg-cream-dark">For Educators</Link>
+              <Link to="/" className="rounded-lg px-3 py-2 text-sm font-medium text-earth-light/85 hover:bg-cream-dark hover:text-earth">Home</Link>
+              <Link to="/articles" className="rounded-lg px-3 py-2 text-sm font-medium text-earth-light/85 hover:bg-cream-dark hover:text-earth">Articles</Link>
+              <Link to="/educators" className="rounded-lg px-3 py-2 text-sm font-medium text-ochre-ink hover:bg-cream-dark">For Educators</Link>
               <a href="/#join" className="rounded-full bg-turquoise px-4 py-2 text-center text-sm font-medium text-white hover:bg-turquoise-dark">Join Us</a>
             </div>
           </details>
@@ -114,13 +114,13 @@ function Educators() {
           <div className="absolute -bottom-40 -left-40 h-80 w-80 rounded-full bg-turquoise/5 blur-3xl" />
         </div>
         <div className="relative z-10 max-w-3xl">
-          <span className="mb-4 inline-block rounded-full bg-ochre/10 px-4 py-1.5 text-xs font-semibold tracking-widest uppercase text-ochre">
+          <span className="mb-4 inline-block rounded-full bg-ochre/10 px-4 py-1.5 text-xs font-semibold tracking-widest uppercase text-ochre-ink">
             For Educators
           </span>
           <h1 className="section-heading mb-6 text-earth">
             Native-led material for your classroom
           </h1>
-          <p className="mx-auto max-w-2xl text-lg leading-relaxed text-earth-light/70">
+          <p className="mx-auto max-w-2xl text-lg leading-relaxed text-earth-light/85">
             Every story we publish is written from a Native perspective and
             sourced to the primary record — court opinions, federal reports,
             tribal documents. This page is where teachers, librarians and
@@ -148,7 +148,7 @@ function Educators() {
         <div className="mx-auto max-w-5xl">
           <div className="mx-auto mb-12 max-w-2xl text-center">
             <h2 className="section-heading mb-4 text-earth">What you can use today</h2>
-            <p className="text-lg leading-relaxed text-earth-light/70">
+            <p className="text-lg leading-relaxed text-earth-light/85">
               We would rather show you the work than describe it. Here is what is
               published now, and an honest account of what does not exist yet.
             </p>
@@ -177,7 +177,7 @@ function Educators() {
             />
           </div>
 
-          <p className="mx-auto mt-8 max-w-2xl text-center text-sm leading-relaxed text-earth-light/60">
+          <p className="mx-auto mt-8 max-w-2xl text-center text-sm leading-relaxed text-earth-light/85">
             We are not yet selling licences or classroom reprint rights. If you
             need them for the coming term, say so below and we will tell you
             honestly what we can and cannot provide.
@@ -192,21 +192,21 @@ function Educators() {
           <div className="grid gap-6 text-left sm:grid-cols-3">
             <div>
               <h3 className="mb-2 font-bold text-earth">K–12 teachers</h3>
-              <p className="text-sm leading-relaxed text-earth-light/70">
+              <p className="text-sm leading-relaxed text-earth-light/85">
                 Social studies, history and English classrooms that need material
                 accurate beyond November.
               </p>
             </div>
             <div>
               <h3 className="mb-2 font-bold text-earth">College faculty</h3>
-              <p className="text-sm leading-relaxed text-earth-light/70">
+              <p className="text-sm leading-relaxed text-earth-light/85">
                 Courses in Native American studies, law, journalism and public
                 policy looking for current, sourced reporting.
               </p>
             </div>
             <div>
               <h3 className="mb-2 font-bold text-earth">Libraries &amp; museums</h3>
-              <p className="text-sm leading-relaxed text-earth-light/70">
+              <p className="text-sm leading-relaxed text-earth-light/85">
                 Public programming, reading lists and exhibits that want Native
                 voices rather than commentary about them.
               </p>
@@ -220,7 +220,7 @@ function Educators() {
         <div className="mx-auto max-w-3xl">
           <div className="text-center">
             <h2 className="section-heading mb-4 text-earth">Tell us what you need</h2>
-            <p className="mx-auto mb-10 max-w-xl text-lg leading-relaxed text-earth-light/70">
+            <p className="mx-auto mb-10 max-w-xl text-lg leading-relaxed text-earth-light/85">
               What grade level, what topic, what format — and whether you need
               something for a specific date. We read every message.
             </p>
@@ -297,7 +297,7 @@ function Educators() {
                 </svg>
               </button>
               {sent && (
-                <p className="text-sm text-earth-light/70">
+                <p className="text-sm text-earth-light/85">
                   Your email app should have opened with this message ready to
                   send — press send there and it reaches us. If nothing opened,
                   email{" "}
@@ -347,7 +347,7 @@ function Educators() {
               </ul>
             </div>
           </div>
-          <div className="mt-12 border-t border-white/10 pt-8 text-center text-sm text-cream-dark/40">
+          <div className="mt-12 border-t border-white/10 pt-8 text-center text-sm text-cream-dark/60">
             &copy; {new Date().getFullYear()} The Indigenous Beacon. All rights reserved.
           </div>
         </div>

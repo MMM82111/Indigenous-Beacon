@@ -44,19 +44,19 @@ function DataCentersArticle() {
           <div className="hidden items-center gap-8 sm:flex">
             <Link
               to="/"
-              className="text-sm font-medium text-earth-light/70 transition-colors hover:text-earth"
+              className="text-sm font-medium text-earth-light/85 transition-colors hover:text-earth"
             >
               Home
             </Link>
             <Link
               to="/articles"
-              className="text-sm font-medium text-earth-light/70 transition-colors hover:text-ochre"
+              className="text-sm font-medium text-earth-light/85 transition-colors hover:text-ochre-ink"
             >
               Articles
             </Link>
             <Link
               to="/about"
-              className="text-sm font-medium text-earth-light/70 transition-colors hover:text-earth"
+              className="text-sm font-medium text-earth-light/85 transition-colors hover:text-earth"
             >
               About
             </Link>
@@ -75,9 +75,9 @@ function DataCentersArticle() {
               </svg>
             </summary>
             <div className="absolute right-4 top-full mt-2 flex w-48 flex-col gap-2 rounded-xl border border-earth/10 bg-white p-4 shadow-lg">
-              <Link to="/" className="rounded-lg px-3 py-2 text-sm font-medium text-earth-light/70 hover:bg-cream-dark hover:text-earth">Home</Link>
-              <Link to="/articles" className="rounded-lg px-3 py-2 text-sm font-medium text-ochre hover:bg-cream-dark">Articles</Link>
-              <Link to="/about" className="rounded-lg px-3 py-2 text-sm font-medium text-earth-light/70 hover:bg-cream-dark hover:text-earth">About</Link>
+              <Link to="/" className="rounded-lg px-3 py-2 text-sm font-medium text-earth-light/85 hover:bg-cream-dark hover:text-earth">Home</Link>
+              <Link to="/articles" className="rounded-lg px-3 py-2 text-sm font-medium text-ochre-ink hover:bg-cream-dark">Articles</Link>
+              <Link to="/about" className="rounded-lg px-3 py-2 text-sm font-medium text-earth-light/85 hover:bg-cream-dark hover:text-earth">About</Link>
               <a href="/#join" className="rounded-full bg-turquoise px-4 py-2 text-center text-sm font-medium text-white hover:bg-turquoise-dark">Join Us</a>
             </div>
           </details>
@@ -91,7 +91,7 @@ function DataCentersArticle() {
           <div className="absolute -bottom-40 -left-40 h-80 w-80 rounded-full bg-turquoise/5 blur-3xl" />
         </div>
         <div className="relative z-10 max-w-3xl">
-          <span className="mb-4 inline-block rounded-full bg-ochre/10 px-4 py-1.5 text-xs font-semibold tracking-widest uppercase text-ochre">
+          <span className="mb-4 inline-block rounded-full bg-ochre/10 px-4 py-1.5 text-xs font-semibold tracking-widest uppercase text-ochre-ink">
             Reporting &amp; News
           </span>
           <h1 className="mb-4 text-3xl font-extrabold tracking-tight text-earth sm:text-4xl md:text-5xl">
@@ -100,7 +100,7 @@ function DataCentersArticle() {
           <p className="mb-6 text-lg font-medium italic text-earth-light/80">
             As tech giants race to build data centers across the American West, Native American tribes are facing a complex new challenge — and an unexpected opportunity.
           </p>
-          <div className="flex items-center justify-center gap-4 text-sm text-earth-light/60">
+          <div className="flex items-center justify-center gap-4 text-sm text-earth-light/85">
             <span>The Indigenous Beacon Editorial Team</span>
             <span aria-hidden="true">·</span>
             <time dateTime="2026-07-16">July 16, 2026</time>
@@ -137,7 +137,7 @@ function DataCentersArticle() {
             The American West has become a particularly hot market. The region offers cheap land, abundant solar and wind energy, and — crucially — tax incentives that can make a multi-billion-dollar data center project pencil out. Arizona, New Mexico, Oregon, and Oklahoma have all seen a surge in data center development proposals, many of them on or adjacent to tribal lands.
           </p>
           <div className="mb-8 rounded-2xl border border-earth/10 bg-cream p-5">
-            <p className="text-base leading-relaxed text-earth-light/70">
+            <p className="text-base leading-relaxed text-earth-light/85">
               "We're seeing a gold rush," says Ashley LaMont, an Indigenous environmental justice organizer with Honor the Earth. "The tech industry sees tribal lands as the last frontier — places where they can build fast and cheap, often without the community pushback they'd face in suburban Virginia or California."
             </p>
           </div>
@@ -160,7 +160,7 @@ function DataCentersArticle() {
 
           <div className="my-8 border-l-4 border-ochre bg-cream-dark py-4 pl-6 pr-4 italic text-earth-light/80">
             <p className="mb-2 text-base">"Water is life. We fought too long and too hard for our water rights to watch them get pumped into cooling towers for server farms."</p>
-            <p className="text-sm font-medium not-italic text-earth-light/60">— Gila River Indian Community member, quoted in tribal council testimony</p>
+            <p className="text-sm font-medium not-italic text-earth-light/85">— Gila River Indian Community member, quoted in tribal council testimony</p>
           </div>
 
           <p className="mb-8 text-lg leading-relaxed text-earth-light/80">
@@ -183,7 +183,7 @@ function DataCentersArticle() {
             The negotiations that followed offer a case study in how tribes can assert sovereignty in the data center era. The Isleta Pueblo demanded — and won — a community benefits agreement that included guaranteed job training for tribal members, environmental monitoring, and a commitment to use renewable energy for the facility's power needs.
           </p>
           <div className="mb-8 rounded-2xl border border-earth/10 bg-cream p-5">
-            <p className="text-base leading-relaxed text-earth-light/70">
+            <p className="text-base leading-relaxed text-earth-light/85">
               "Our sovereignty is not for sale," said Isleta Pueblo Governor Vernon Abeita in a statement at the time. "But we are open to partnerships that respect our people, our land, and our future."
             </p>
           </div>
@@ -209,7 +209,7 @@ function DataCentersArticle() {
 
           <div className="my-8 border-l-4 border-turquoise bg-cream-dark py-4 pl-6 pr-4 italic text-earth-light/80">
             <p className="mb-2 text-base">"The checkerboard is a tool of colonization. Tech companies are using it to build on our land without our consent."</p>
-            <p className="text-sm font-medium not-italic text-earth-light/60">— Indigenous sovereignty scholar, interview with The Indigenous Beacon</p>
+            <p className="text-sm font-medium not-italic text-earth-light/85">— Indigenous sovereignty scholar, interview with The Indigenous Beacon</p>
           </div>
 
           <p className="mb-8 text-lg leading-relaxed text-earth-light/80">
@@ -229,7 +229,7 @@ function DataCentersArticle() {
             Data centers also generate significant noise pollution — the constant hum of cooling fans and backup generators can be heard for miles. And they require backup diesel generators, which can leak or fail, contaminating soil and groundwater.
           </p>
           <div className="mb-8 rounded-2xl border border-earth/10 bg-cream p-5">
-            <p className="text-base leading-relaxed text-earth-light/70">
+            <p className="text-base leading-relaxed text-earth-light/85">
               "What the tech companies don't tell you is that these facilities are essentially industrial factories," says LaMont. "They're not clean. They're not silent. They're not going to make your community healthier."
             </p>
           </div>
@@ -255,7 +255,7 @@ function DataCentersArticle() {
 
           <div className="my-8 border-l-4 border-crimson bg-cream-dark py-4 pl-6 pr-4 italic text-earth-light/80">
             <p className="mb-2 text-base">"They promise jobs, but the jobs go to people from outside. They promise revenue, but the revenue comes with strings attached. We've seen this movie before."</p>
-            <p className="text-sm font-medium not-italic text-earth-light/60">— Tribal economic development director, speaking on condition of anonymity</p>
+            <p className="text-sm font-medium not-italic text-earth-light/85">— Tribal economic development director, speaking on condition of anonymity</p>
           </div>
 
           <hr className="my-10 border-earth/10" />
@@ -274,7 +274,7 @@ function DataCentersArticle() {
             Some are going further. The Confederated Tribes of Warm Springs are exploring the development of a tribally owned and operated data center that would use the tribe's renewable hydropower resources. The project would allow the tribe to capture the full economic value of the data center — not just lease payments, but the profits from operating the facility itself.
           </p>
           <div className="mb-8 rounded-2xl border border-earth/10 bg-cream p-5">
-            <p className="text-base leading-relaxed text-earth-light/70">
+            <p className="text-base leading-relaxed text-earth-light/85">
               "This is about sovereignty," says an Indigenous economic development consultant. "It's not about whether data centers are good or bad. It's about who controls the terms. If we have the power to say no, we also have the power to say yes — on our own terms."
             </p>
           </div>
@@ -296,7 +296,7 @@ function DataCentersArticle() {
           </p>
 
           <div className="mb-10 rounded-2xl border border-earth/10 bg-cream-dark p-8 text-center">
-            <p className="text-sm italic text-earth-light/60">
+            <p className="text-sm italic text-earth-light/85">
               This article is part of The Indigenous Beacon's ongoing series on technology, environment, and Indigenous sovereignty.
             </p>
           </div>
@@ -357,7 +357,7 @@ function DataCentersArticle() {
               </ul>
             </div>
           </div>
-          <div className="mt-12 border-t border-white/10 pt-8 text-center text-sm text-cream-dark/40">
+          <div className="mt-12 border-t border-white/10 pt-8 text-center text-sm text-cream-dark/60">
             &copy; {new Date().getFullYear()} The Indigenous Beacon. All rights reserved.
           </div>
         </div>

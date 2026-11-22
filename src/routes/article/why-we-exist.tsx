@@ -44,13 +44,13 @@ function WhyWeExistArticle() {
           <div className="hidden items-center gap-8 sm:flex">
             <Link
               to="/"
-              className="text-sm font-medium text-earth-light/70 transition-colors hover:text-earth"
+              className="text-sm font-medium text-earth-light/85 transition-colors hover:text-earth"
             >
               Home
             </Link>
             <Link
               to="/about"
-              className="text-sm font-medium text-earth-light/70 transition-colors hover:text-earth"
+              className="text-sm font-medium text-earth-light/85 transition-colors hover:text-earth"
             >
               About
             </Link>
@@ -69,8 +69,8 @@ function WhyWeExistArticle() {
               </svg>
             </summary>
             <div className="absolute right-4 top-full mt-2 flex w-48 flex-col gap-2 rounded-xl border border-earth/10 bg-white p-4 shadow-lg">
-              <Link to="/" className="rounded-lg px-3 py-2 text-sm font-medium text-earth-light/70 hover:bg-cream-dark hover:text-earth">Home</Link>
-              <Link to="/about" className="rounded-lg px-3 py-2 text-sm font-medium text-earth-light/70 hover:bg-cream-dark hover:text-earth">About</Link>
+              <Link to="/" className="rounded-lg px-3 py-2 text-sm font-medium text-earth-light/85 hover:bg-cream-dark hover:text-earth">Home</Link>
+              <Link to="/about" className="rounded-lg px-3 py-2 text-sm font-medium text-earth-light/85 hover:bg-cream-dark hover:text-earth">About</Link>
               <a href="/#join" className="rounded-full bg-turquoise px-4 py-2 text-center text-sm font-medium text-white hover:bg-turquoise-dark">Join Us</a>
             </div>
           </details>
@@ -84,7 +84,7 @@ function WhyWeExistArticle() {
           <div className="absolute -bottom-40 -left-40 h-80 w-80 rounded-full bg-turquoise/5 blur-3xl" />
         </div>
         <div className="relative z-10 max-w-3xl">
-          <span className="mb-4 inline-block rounded-full bg-ochre/10 px-4 py-1.5 text-xs font-semibold tracking-widest uppercase text-ochre">
+          <span className="mb-4 inline-block rounded-full bg-ochre/10 px-4 py-1.5 text-xs font-semibold tracking-widest uppercase text-ochre-ink">
             Launch Article
           </span>
           <h1 className="mb-4 text-3xl font-extrabold tracking-tight text-earth sm:text-4xl md:text-5xl">
@@ -93,7 +93,7 @@ function WhyWeExistArticle() {
           <p className="mb-6 text-lg font-medium italic text-earth-light/80">
             A Native-led platform for truth, told by those who live it.
           </p>
-          <div className="flex items-center justify-center gap-4 text-sm text-earth-light/60">
+          <div className="flex items-center justify-center gap-4 text-sm text-earth-light/85">
             <span>The Indigenous Beacon Editorial Team</span>
             <span aria-hidden="true">·</span>
             <time dateTime="2026-07-15">July 15, 2026</time>
@@ -201,7 +201,7 @@ function WhyWeExistArticle() {
               <h3 className="mb-2 text-xl font-bold text-earth">
                 Reporting &amp; News
               </h3>
-              <p className="text-base leading-relaxed text-earth-light/70">
+              <p className="text-base leading-relaxed text-earth-light/85">
                 Original journalism covering the issues that matter to Native
                 communities, from Supreme Court decisions on tribal sovereignty
                 to the fight for clean water on reservations. We report with
@@ -212,7 +212,7 @@ function WhyWeExistArticle() {
               <h3 className="mb-2 text-xl font-bold text-earth">
                 Culture &amp; Storytelling
               </h3>
-              <p className="text-base leading-relaxed text-earth-light/70">
+              <p className="text-base leading-relaxed text-earth-light/85">
                 Deeply human stories about Native life today: the artists,
                 musicians, language revitalizers, and everyday people who are
                 shaping Indigenous futures. We believe joy and creativity are as
@@ -223,7 +223,7 @@ function WhyWeExistArticle() {
               <h3 className="mb-2 text-xl font-bold text-earth">
                 Education &amp; Curriculum
               </h3>
-              <p className="text-base leading-relaxed text-earth-light/70">
+              <p className="text-base leading-relaxed text-earth-light/85">
                 Classroom-ready resources developed by Native educators, aligned
                 with state and national standards. We are building the curriculum
                 that we wish had been available when we were students.
@@ -233,7 +233,7 @@ function WhyWeExistArticle() {
               <h3 className="mb-2 text-xl font-bold text-earth">
                 Community &amp; Dialogue
               </h3>
-              <p className="text-base leading-relaxed text-earth-light/70">
+              <p className="text-base leading-relaxed text-earth-light/85">
                 Live events, Q&amp;As, and spaces for conversation where Native
                 voices lead and allies can learn how to show up meaningfully.
               </p>
@@ -313,7 +313,7 @@ function WhyWeExistArticle() {
             <p className="mb-1 text-lg font-bold text-earth">
               — The Indigenous Beacon Editorial Team
             </p>
-            <p className="text-sm italic text-earth-light/60">
+            <p className="text-sm italic text-earth-light/85">
               The Indigenous Beacon is a Native-led digital media and education
               platform. Our work is supported by members, educational licensing,
               and foundation grants.
@@ -374,7 +374,7 @@ function WhyWeExistArticle() {
               </ul>
             </div>
           </div>
-          <div className="mt-12 border-t border-white/10 pt-8 text-center text-sm text-cream-dark/40">
+          <div className="mt-12 border-t border-white/10 pt-8 text-center text-sm text-cream-dark/60">
             &copy; {new Date().getFullYear()} The Indigenous Beacon. All rights reserved.
           </div>
         </div>

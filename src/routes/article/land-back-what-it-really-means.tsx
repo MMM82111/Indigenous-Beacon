@@ -44,19 +44,19 @@ function LandBackArticle() {
           <div className="hidden items-center gap-8 sm:flex">
             <Link
               to="/"
-              className="text-sm font-medium text-earth-light/70 transition-colors hover:text-earth"
+              className="text-sm font-medium text-earth-light/85 transition-colors hover:text-earth"
             >
               Home
             </Link>
             <Link
               to="/articles"
-              className="text-sm font-medium text-earth-light/70 transition-colors hover:text-ochre"
+              className="text-sm font-medium text-earth-light/85 transition-colors hover:text-ochre-ink"
             >
               Articles
             </Link>
             <Link
               to="/about"
-              className="text-sm font-medium text-earth-light/70 transition-colors hover:text-earth"
+              className="text-sm font-medium text-earth-light/85 transition-colors hover:text-earth"
             >
               About
             </Link>
@@ -75,9 +75,9 @@ function LandBackArticle() {
               </svg>
             </summary>
             <div className="absolute right-4 top-full mt-2 flex w-48 flex-col gap-2 rounded-xl border border-earth/10 bg-white p-4 shadow-lg">
-              <Link to="/" className="rounded-lg px-3 py-2 text-sm font-medium text-earth-light/70 hover:bg-cream-dark hover:text-earth">Home</Link>
-              <Link to="/articles" className="rounded-lg px-3 py-2 text-sm font-medium text-ochre hover:bg-cream-dark">Articles</Link>
-              <Link to="/about" className="rounded-lg px-3 py-2 text-sm font-medium text-earth-light/70 hover:bg-cream-dark hover:text-earth">About</Link>
+              <Link to="/" className="rounded-lg px-3 py-2 text-sm font-medium text-earth-light/85 hover:bg-cream-dark hover:text-earth">Home</Link>
+              <Link to="/articles" className="rounded-lg px-3 py-2 text-sm font-medium text-ochre-ink hover:bg-cream-dark">Articles</Link>
+              <Link to="/about" className="rounded-lg px-3 py-2 text-sm font-medium text-earth-light/85 hover:bg-cream-dark hover:text-earth">About</Link>
               <a href="/#join" className="rounded-full bg-turquoise px-4 py-2 text-center text-sm font-medium text-white hover:bg-turquoise-dark">Join Us</a>
             </div>
           </details>
@@ -91,7 +91,7 @@ function LandBackArticle() {
           <div className="absolute -bottom-40 -left-40 h-80 w-80 rounded-full bg-turquoise/5 blur-3xl" />
         </div>
         <div className="relative z-10 max-w-3xl">
-          <span className="mb-4 inline-block rounded-full bg-ochre/10 px-4 py-1.5 text-xs font-semibold tracking-widest uppercase text-ochre">
+          <span className="mb-4 inline-block rounded-full bg-ochre/10 px-4 py-1.5 text-xs font-semibold tracking-widest uppercase text-ochre-ink">
             Policy Explainer
           </span>
           <h1 className="mb-4 text-3xl font-extrabold tracking-tight text-earth sm:text-4xl md:text-5xl">
@@ -100,7 +100,7 @@ function LandBackArticle() {
           <p className="mb-6 text-lg font-medium italic text-earth-light/80">
             A policy explainer on the movement to return land to Indigenous stewardship.
           </p>
-          <div className="flex items-center justify-center gap-4 text-sm text-earth-light/60">
+          <div className="flex items-center justify-center gap-4 text-sm text-earth-light/85">
             <span>The Indigenous Beacon Editorial Team</span>
             <span aria-hidden="true">·</span>
             <time dateTime="2026-07-16">July 16, 2026</time>
@@ -144,25 +144,25 @@ function LandBackArticle() {
           <div className="mb-8 space-y-6">
             <div className="rounded-2xl border border-earth/10 bg-white p-6 shadow-sm">
               <h3 className="mb-2 text-xl font-bold text-earth">1. Public Lands Transfers</h3>
-              <p className="text-base leading-relaxed text-earth-light/70">
+              <p className="text-base leading-relaxed text-earth-light/85">
                 The most common form of Land Back involves the transfer of federal or state public lands to tribal ownership or co-management. These are lands that are already publicly owned — national forests, Bureau of Land Management parcels, state parks — not private property. The Biden administration's transfer of 465 acres of national forest land to the Pueblo of Jemez in New Mexico is a recent example. The land, which contains sacred sites and ancestral villages, was returned to Tribal ownership while remaining protected as open space.
               </p>
             </div>
             <div className="rounded-2xl border border-earth/10 bg-white p-6 shadow-sm">
               <h3 className="mb-2 text-xl font-bold text-earth">2. Co-Management Agreements</h3>
-              <p className="text-base leading-relaxed text-earth-light/70">
+              <p className="text-base leading-relaxed text-earth-light/85">
                 Some Land Back efforts focus on shared stewardship rather than outright ownership. In 2023, the Biden administration signed new co-management agreements with several tribal nations, giving them a formal role in managing national parks and public lands that contain culturally significant sites. The Bears Ears National Monument in Utah, co-managed by five tribal nations, is the most prominent example.
               </p>
             </div>
             <div className="rounded-2xl border border-earth/10 bg-white p-6 shadow-sm">
               <h3 className="mb-2 text-xl font-bold text-earth">3. Land Purchases and Donations</h3>
-              <p className="text-base leading-relaxed text-earth-light/70">
+              <p className="text-base leading-relaxed text-earth-light/85">
                 Private land trusts and conservation organizations have begun facilitating Land Back by purchasing land and transferring it to tribal nations. The Nature Conservancy has transferred thousands of acres to tribal stewardship. The Trust for Public Land has helped return sacred sites like the return of 1,200 acres of Sáttítla (Medicine Lake Highlands) to the Pit River Tribe in California.
               </p>
             </div>
             <div className="rounded-2xl border border-earth/10 bg-white p-6 shadow-sm">
               <h3 className="mb-2 text-xl font-bold text-earth">4. Repatriation of Specific Sites</h3>
-              <p className="text-base leading-relaxed text-earth-light/70">
+              <p className="text-base leading-relaxed text-earth-light/85">
                 Many Land Back campaigns focus on returning specific, culturally significant sites — burial grounds, sacred mountains, ceremonial sites — that are currently under non-Native ownership. The return of Mount Graham to the San Carlos Apache Tribe, or the return of the 130-acre "Pronghorn" site to the Confederated Tribes of the Colville Reservation, are examples of targeted site repatriation.
               </p>
             </div>
@@ -213,7 +213,7 @@ function LandBackArticle() {
               <span className="mt-1 text-ochre" aria-hidden="true">&loz;</span>
               <div>
                 <h3 className="mb-1 text-lg font-bold text-earth">For Sovereignty</h3>
-                <p className="text-base leading-relaxed text-earth-light/70">
+                <p className="text-base leading-relaxed text-earth-light/85">
                   Land is the physical foundation of tribal sovereignty. Without a land base, a nation cannot exercise jurisdiction, support its economy, or protect its cultural resources. Every acre returned to tribal ownership strengthens the practical reality of tribal self-governance.
                 </p>
               </div>
@@ -222,7 +222,7 @@ function LandBackArticle() {
               <span className="mt-1 text-turquoise" aria-hidden="true">&loz;</span>
               <div>
                 <h3 className="mb-1 text-lg font-bold text-earth">For the Environment</h3>
-                <p className="text-base leading-relaxed text-earth-light/70">
+                <p className="text-base leading-relaxed text-earth-light/85">
                   Research consistently shows that Indigenous-managed lands have higher biodiversity and lower rates of deforestation than adjacent non-Indigenous lands. A 2019 study in the journal <em>Nature</em> found that Indigenous territories in the Amazon — which are often held under insecure tenure — are as effective as protected areas at preventing deforestation. Returning land to Indigenous stewardship is one of the most effective conservation strategies available.
                 </p>
               </div>
@@ -231,7 +231,7 @@ function LandBackArticle() {
               <span className="mt-1 text-crimson" aria-hidden="true">&loz;</span>
               <div>
                 <h3 className="mb-1 text-lg font-bold text-earth">For Healing</h3>
-                <p className="text-base leading-relaxed text-earth-light/70">
+                <p className="text-base leading-relaxed text-earth-light/85">
                   The theft of land is not just a historical injustice — it is an ongoing wound. The Dawes Act of 1887, which broke up collectively held tribal lands and allotted them to individual households, resulted in the loss of approximately 90 million acres of tribal land. For many Native people, the return of land is a necessary step toward healing that intergenerational trauma.
                 </p>
               </div>
@@ -248,15 +248,15 @@ function LandBackArticle() {
           <div className="mb-8 space-y-4">
             <div className="rounded-2xl border border-earth/10 bg-white p-6 shadow-sm">
               <p className="mb-2 text-base font-bold text-earth">&ldquo;Land Back means kicking people off their property.&rdquo;</p>
-              <p className="text-base leading-relaxed text-earth-light/70">No. Land Back initiatives focus on public lands, not private property. No major Land Back organization advocates for the seizure of private homes or farms.</p>
+              <p className="text-base leading-relaxed text-earth-light/85">No. Land Back initiatives focus on public lands, not private property. No major Land Back organization advocates for the seizure of private homes or farms.</p>
             </div>
             <div className="rounded-2xl border border-earth/10 bg-white p-6 shadow-sm">
               <p className="mb-2 text-base font-bold text-earth">&ldquo;Tribes can't manage land as well as the government.&rdquo;</p>
-              <p className="text-base leading-relaxed text-earth-light/70">The evidence suggests the opposite. Tribal nations have managed their lands sustainably for thousands of years. Modern tribal natural resource departments are staffed by trained professionals, and tribal co-management of federal lands has been shown to improve outcomes.</p>
+              <p className="text-base leading-relaxed text-earth-light/85">The evidence suggests the opposite. Tribal nations have managed their lands sustainably for thousands of years. Modern tribal natural resource departments are staffed by trained professionals, and tribal co-management of federal lands has been shown to improve outcomes.</p>
             </div>
             <div className="rounded-2xl border border-earth/10 bg-white p-6 shadow-sm">
               <p className="mb-2 text-base font-bold text-earth">&ldquo;This is just about money — tribes want to develop the land.&rdquo;</p>
-              <p className="text-base leading-relaxed text-earth-light/70">For many tribes, the goal is preservation, not development. The return of Bears Ears to tribal co-management was driven by a desire to protect the area from looting and development. When tribes do pursue economic development on returned lands, it is often for purposes that benefit the entire community — housing, healthcare, education.</p>
+              <p className="text-base leading-relaxed text-earth-light/85">For many tribes, the goal is preservation, not development. The return of Bears Ears to tribal co-management was driven by a desire to protect the area from looting and development. When tribes do pursue economic development on returned lands, it is often for purposes that benefit the entire community — housing, healthcare, education.</p>
             </div>
           </div>
 
@@ -300,7 +300,7 @@ function LandBackArticle() {
           </p>
 
           <div className="mb-10 rounded-2xl border border-earth/10 bg-cream-dark p-8 text-center">
-            <p className="text-sm italic text-earth-light/60">
+            <p className="text-sm italic text-earth-light/85">
               This article is part of The Indigenous Beacon's policy explainer series.
             </p>
           </div>
@@ -361,7 +361,7 @@ function LandBackArticle() {
               </ul>
             </div>
           </div>
-          <div className="mt-12 border-t border-white/10 pt-8 text-center text-sm text-cream-dark/40">
+          <div className="mt-12 border-t border-white/10 pt-8 text-center text-sm text-cream-dark/60">
             &copy; {new Date().getFullYear()} The Indigenous Beacon. All rights reserved.
           </div>
         </div>

@@ -219,7 +219,7 @@ function NewsletterForm() {
         </p>
       )}
       {unavailable && (
-        <p className="mt-2 text-sm text-earth-light/70">
+        <p className="mt-2 text-sm text-earth-light/85">
           In the meantime you can{" "}
           <a
             className="font-medium text-turquoise underline underline-offset-2 hover:text-turquoise-dark"
@@ -253,31 +253,31 @@ function Home() {
           <div className="hidden items-center gap-8 sm:flex">
             <a
               href="#mission"
-              className="text-sm font-medium text-earth-light/70 transition-colors hover:text-earth"
+              className="text-sm font-medium text-earth-light/85 transition-colors hover:text-earth"
             >
               Mission
             </a>
             <a
               href="#content"
-              className="text-sm font-medium text-earth-light/70 transition-colors hover:text-earth"
+              className="text-sm font-medium text-earth-light/85 transition-colors hover:text-earth"
             >
               What We Cover
             </a>
             <Link
               to="/articles"
-              className="text-sm font-medium text-earth-light/70 transition-colors hover:text-earth"
+              className="text-sm font-medium text-earth-light/85 transition-colors hover:text-earth"
             >
               Articles
             </Link>
             <Link
               to="/write-for-us"
-              className="text-sm font-medium text-earth-light/70 transition-colors hover:text-earth"
+              className="text-sm font-medium text-earth-light/85 transition-colors hover:text-earth"
             >
               Write for Us
             </Link>
             <Link
               to="/educators"
-              className="text-sm font-medium text-earth-light/70 transition-colors hover:text-earth"
+              className="text-sm font-medium text-earth-light/85 transition-colors hover:text-earth"
             >
               For Educators
             </Link>
@@ -296,11 +296,11 @@ function Home() {
               </svg>
             </summary>
             <div className="absolute right-4 top-full mt-2 flex w-48 flex-col gap-2 rounded-xl border border-earth/10 bg-white p-4 shadow-lg">
-              <a href="#mission" className="rounded-lg px-3 py-2 text-sm font-medium text-earth-light/70 hover:bg-cream-dark hover:text-earth">Mission</a>
-              <a href="#content" className="rounded-lg px-3 py-2 text-sm font-medium text-earth-light/70 hover:bg-cream-dark hover:text-earth">What We Cover</a>
-              <Link to="/articles" className="rounded-lg px-3 py-2 text-sm font-medium text-earth-light/70 hover:bg-cream-dark hover:text-earth">Articles</Link>
-              <Link to="/write-for-us" className="rounded-lg px-3 py-2 text-sm font-medium text-earth-light/70 hover:bg-cream-dark hover:text-earth">Write for Us</Link>
-              <Link to="/educators" className="rounded-lg px-3 py-2 text-sm font-medium text-earth-light/70 hover:bg-cream-dark hover:text-earth">For Educators</Link>
+              <a href="#mission" className="rounded-lg px-3 py-2 text-sm font-medium text-earth-light/85 hover:bg-cream-dark hover:text-earth">Mission</a>
+              <a href="#content" className="rounded-lg px-3 py-2 text-sm font-medium text-earth-light/85 hover:bg-cream-dark hover:text-earth">What We Cover</a>
+              <Link to="/articles" className="rounded-lg px-3 py-2 text-sm font-medium text-earth-light/85 hover:bg-cream-dark hover:text-earth">Articles</Link>
+              <Link to="/write-for-us" className="rounded-lg px-3 py-2 text-sm font-medium text-earth-light/85 hover:bg-cream-dark hover:text-earth">Write for Us</Link>
+              <Link to="/educators" className="rounded-lg px-3 py-2 text-sm font-medium text-earth-light/85 hover:bg-cream-dark hover:text-earth">For Educators</Link>
               <a href="#join" className="rounded-full bg-turquoise px-4 py-2 text-center text-sm font-medium text-white hover:bg-turquoise-dark">Join Us</a>
             </div>
           </details>
@@ -319,7 +319,7 @@ function Home() {
         </div>
 
         <div className="relative z-10 max-w-4xl">
-          <span className="mb-6 inline-block rounded-full bg-ochre/10 px-4 py-1.5 text-xs font-semibold tracking-widest uppercase text-ochre">
+          <span className="mb-6 inline-block rounded-full bg-ochre/10 px-4 py-1.5 text-xs font-semibold tracking-widest uppercase text-ochre-ink">
             Native-Led Media &amp; Education
           </span>
           <h1 className="mb-6 text-4xl font-extrabold tracking-tight sm:text-5xl md:text-6xl lg:text-7xl">
@@ -445,7 +445,7 @@ function Home() {
           <h2 className="section-heading mb-6 text-earth">
             Four pillars of Indigenous storytelling
           </h2>
-          <p className="text-lg leading-relaxed text-earth-light/70">
+          <p className="text-lg leading-relaxed text-earth-light/85">
             From breaking news and investigative reports to ancestral stories and
             classroom-ready resources — our content spans the full spectrum of
             Native experience.
@@ -513,7 +513,7 @@ function Home() {
           <h2 className="section-heading mb-6 text-earth">
             Join the Beacon community
           </h2>
-          <p className="mx-auto mb-10 max-w-xl text-lg leading-relaxed text-earth-light/70">
+          <p className="mx-auto mb-10 max-w-xl text-lg leading-relaxed text-earth-light/85">
             Be the first to know about new stories, educational resources, and
             events. Sign up to receive our newsletter and learn how you can
             support Indigenous-led media.
@@ -530,7 +530,7 @@ function Home() {
             <h3 className="mb-3 font-serif text-2xl font-bold text-earth">
               Support the Beacon
             </h3>
-            <p className="mx-auto max-w-xl text-sm leading-relaxed text-earth-light/60">
+            <p className="mx-auto max-w-xl text-sm leading-relaxed text-earth-light/85">
               Every amount below is a <strong>one-time contribution</strong> — you
               are charged once, and there is no automatic renewal. Choose the
               level that fits, and thank you for backing Native-led journalism.
@@ -541,9 +541,9 @@ function Home() {
               <h3 className="mb-2 text-lg font-bold text-earth">Supporter</h3>
               <div className="mb-4">
                 <p className="text-2xl font-bold text-turquoise">$5</p>
-                <p className="text-xs text-earth-light/60">one-time contribution</p>
+                <p className="text-xs text-earth-light/85">one-time contribution</p>
               </div>
-              <ul className="mb-6 flex-1 space-y-2 text-left text-sm text-earth-light/70">
+              <ul className="mb-6 flex-1 space-y-2 text-left text-sm text-earth-light/85">
                 <li className="flex items-start gap-2">
                   <span className="mt-0.5 text-ochre">✦</span> Ad-free reading
                 </li>
@@ -557,7 +557,7 @@ function Home() {
                   href="https://buy.stripe.com/4gM00jaOU20D3NF8RF3Nm03"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-xs text-earth-light/60 underline underline-offset-2 transition-colors hover:text-earth"
+                  className="text-xs text-earth-light/85 underline underline-offset-2 transition-colors hover:text-earth"
                 >
                   or contribute $50
                 </a>
@@ -571,9 +571,9 @@ function Home() {
               <h3 className="mb-2 text-lg font-bold text-earth">Beacon</h3>
               <div className="mb-4">
                 <p className="text-2xl font-bold text-turquoise">$15</p>
-                <p className="text-xs text-earth-light/60">one-time contribution</p>
+                <p className="text-xs text-earth-light/85">one-time contribution</p>
               </div>
-              <ul className="mb-6 flex-1 space-y-2 text-left text-sm text-earth-light/70">
+              <ul className="mb-6 flex-1 space-y-2 text-left text-sm text-earth-light/85">
                 <li className="flex items-start gap-2">
                   <span className="mt-0.5 text-ochre">✦</span> Everything in Supporter
                 </li>
@@ -590,7 +590,7 @@ function Home() {
                   href="https://buy.stripe.com/fZu8wP6yE5cP6ZRgk73Nm04"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-xs text-earth-light/60 underline underline-offset-2 transition-colors hover:text-earth"
+                  className="text-xs text-earth-light/85 underline underline-offset-2 transition-colors hover:text-earth"
                 >
                   or contribute $150
                 </a>
@@ -601,9 +601,9 @@ function Home() {
               <h3 className="mb-2 text-lg font-bold text-earth">Elder</h3>
               <div className="mb-4">
                 <p className="text-2xl font-bold text-turquoise">$30</p>
-                <p className="text-xs text-earth-light/60">one-time contribution</p>
+                <p className="text-xs text-earth-light/85">one-time contribution</p>
               </div>
-              <ul className="mb-6 flex-1 space-y-2 text-left text-sm text-earth-light/70">
+              <ul className="mb-6 flex-1 space-y-2 text-left text-sm text-earth-light/85">
                 <li className="flex items-start gap-2">
                   <span className="mt-0.5 text-ochre">✦</span> Everything in Beacon
                 </li>
@@ -620,7 +620,7 @@ function Home() {
                   href="https://buy.stripe.com/9B63cvf5agVxfwn3xl3Nm05"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-xs text-earth-light/60 underline underline-offset-2 transition-colors hover:text-earth"
+                  className="text-xs text-earth-light/85 underline underline-offset-2 transition-colors hover:text-earth"
                 >
                   or contribute $300
                 </a>
@@ -705,7 +705,7 @@ function Home() {
             </div>
           </div>
 
-          <div className="mt-12 border-t border-white/10 pt-8 text-center text-sm text-cream-dark/40">
+          <div className="mt-12 border-t border-white/10 pt-8 text-center text-sm text-cream-dark/60">
             &copy; {new Date().getFullYear()} The Indigenous Beacon. All rights
             reserved.
           </div>
