@@ -277,7 +277,14 @@ function ArticlesPage() {
               are auditing everything we have published against primary sources.
               Pieces that do not meet that standard are being withdrawn rather
               than quietly edited — you will see them marked below. We would
-              rather show you the gaps than hide them.
+              rather show you the gaps than hide them.{" "}
+              <a
+                href="/corrections"
+                className="font-medium text-turquoise-dark underline underline-offset-2"
+              >
+                What we withdrew, and why
+              </a>
+              .
             </p>
           </div>
           <div className="relative grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
@@ -332,6 +339,7 @@ function ArticlesPage() {
                 <li><Link to="/about" className="transition-colors hover:text-ochre-light">About</Link></li>
                 <li><Link to="/write-for-us" className="transition-colors hover:text-ochre-light">Write for Us</Link></li>
                 <li><a href="/educators" className="transition-colors hover:text-ochre-light">For Educators</a></li>
+                <li><a href="/corrections" className="transition-colors hover:text-ochre-light">Corrections</a></li>
                 <li><a href="/#join" className="transition-colors hover:text-ochre-light">Support Us</a></li>
               </ul>
             </div>

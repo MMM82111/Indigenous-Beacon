@@ -436,6 +436,7 @@ function About() {
                 <li><Link to="/" className="transition-colors hover:text-ochre-light">Home</Link></li>
                 <li><Link to="/about" className="transition-colors hover:text-ochre-light">About</Link></li>
                 <li><a href="/educators" className="transition-colors hover:text-ochre-light">For Educators</a></li>
+                <li><a href="/corrections" className="transition-colors hover:text-ochre-light">Corrections</a></li>
                 <li><a href="/#join" className="transition-colors hover:text-ochre-light">Support Us</a></li>
               </ul>
             </div>
