@@ -113,11 +113,11 @@ function Corrections() {
 
         <p className="mb-6 text-lg leading-relaxed text-earth-light/85">
           In November 2026 we audited our own archive and found that it did not
-          meet the standard this subject deserves. Five articles carried
-          quotations attributed to real people who never gave them, and specific
+          meet the standard this subject deserves. Five articles carried specific
           claims about dates, acreages, dollars and events that we could not
-          verify against any source. We withdrew them. This page records that,
-          and states what we now hold every piece to.
+          verify against any source — and four of them also carried quotations
+          attributed to real people who never gave them. We withdrew them. This
+          page records that, and states what we now hold every piece to.
         </p>
 
         <p className="mb-10 text-lg leading-relaxed text-earth-light/85">
